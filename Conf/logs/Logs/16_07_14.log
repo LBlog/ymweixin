@@ -1,0 +1,140 @@
+[ 2016-07-14T08:31:49+08:00 ] ERR: (ThinkException) 无法加载模块:Hld
+[ 2016-07-14T08:31:49+08:00 ] ERR: (ThinkException) 无法加载模块:Hld
+[ 2016-07-14T08:31:58+08:00 ] ERR: (ThinkException) 无法加载模块:Hld
+[ 2016-07-14T09:39:41+08:00 ] ERR: (ThinkException) 无法加载模块:Twitter
+[ 2016-07-14T14:37:35+08:00 ] ERR: (ThinkException) 无法加载模块:ext
+[ 2016-07-14T14:37:38+08:00 ] ERR: (ThinkException) 无法加载模块:ext
+[ 2016-07-14T14:37:40+08:00 ] ERR: (ThinkException) 无法加载模块:ext
+[ 2016-07-14T14:45:43+08:00 ] ERR: (ThinkException) 无法加载模块:mall
+[ 2016-07-14T14:45:43+08:00 ] ERR: (ThinkException) 无法加载模块:mall
+[ 2016-07-14T14:45:49+08:00 ] ERR: (ThinkException) 无法加载模块:mall
+[ 2016-07-14T14:45:50+08:00 ] ERR: (ThinkException) 无法加载模块:ext
+[ 2016-07-14T14:46:21+08:00 ] 218.75.69.250 /index.php?g=Hld&m=Mall&a=ajax_showmore
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000347s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000414s ]
+SQL: SHOW COLUMNS FROM `tp_weixin_account` [ RunTime:0.000477s ]
+SQL: SELECT * FROM `tp_weixin_account` WHERE ( `type` = 1 ) LIMIT 1   [ RunTime:0.000150s ]
+SQL: SHOW COLUMNS FROM `tp_ahld_mall` [ RunTime:0.000340s ]
+SQL: SHOW COLUMNS FROM `tp_ahld_mtype` [ RunTime:0.000351s ]
+SQL: SHOW COLUMNS FROM `tp_ahld_conf` [ RunTime:0.000288s ]
+SQL: SHOW COLUMNS FROM `tp_userinfo` [ RunTime:0.000541s ]
+SQL: SELECT `value` FROM `tp_ahld_conf` WHERE ( `type` = 3 ) LIMIT 1   [ RunTime:0.000163s ]
+SQL: SELECT * FROM `tp_userinfo` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000182s ]
+SQL: SELECT `id`,`name`,`level`,`pid` FROM `tp_ahld_mtype`  [ RunTime:0.000131s ]
+SQL: select tp_ahld_mall.*,ROUND(6378.138*2*ASIN(SQRT(POW(SIN(('30.3362'*PI()/180-latitude*PI()/180)/2),2)+COS('30.3362'*PI()/180)*COS(latitude*PI()/180)*POW(SIN(('120.118'*PI()/180-longitude*PI()/180)/2),2)))*1000) as distance from tp_ahld_mall where ROUND(6378.138*2*ASIN(SQRT(POW(SIN(('30.3362'*PI()/180-latitude*PI()/180)/2),2)+COS('30.3362'*PI()/180)*COS(latitude*PI()/180)*POW(SIN(('120.118'*PI()/180-longitude*PI()/180)/2),2)))*1000) < 12000 and type in (9,13,12,21,8)  order by score asc limit 1,2 [ RunTime:0.000314s ]
+
+[ 2016-07-14T14:47:01+08:00 ] 218.75.69.250 /index.php?g=Hld&m=Ext&a=ajaxext
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000347s ]
+SQL: SHOW COLUMNS FROM `tp_weixin_account` [ RunTime:0.000503s ]
+SQL: SELECT * FROM `tp_weixin_account` WHERE ( `type` = 1 ) LIMIT 1   [ RunTime:0.000119s ]
+SQL: SHOW COLUMNS FROM `tp_ahld_ext` [ RunTime:0.000376s ]
+SQL: SHOW COLUMNS FROM `tp_ahld_conf` [ RunTime:0.000282s ]
+SQL: SHOW COLUMNS FROM `tp_userinfo` [ RunTime:0.000479s ]
+SQL: SELECT `value` FROM `tp_ahld_conf` WHERE ( `type` = 1 ) LIMIT 1   [ RunTime:0.000137s ]
+SQL: SELECT * FROM `tp_userinfo` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000163s ]
+SQL: SELECT `id`,`title`,`addr`,`img`,ROUND(6378.138*2*ASIN(SQRT(POW(SIN(('30.3362'*PI()/180-latitude*PI()/180)/2),2)+COS('30.3362'*PI()/180)*COS(latitude*PI()/180)*POW(SIN(('120.118'*PI()/180-longitude*PI()/180)/2),2)))*1000) as distance FROM `tp_ahld_ext` WHERE round(6378.138*2*ASIN(SQRT(POW(SIN(('30.3362'*PI()/180-latitude*PI()/180)/2),2)+COS('30.3362'*PI()/180)*COS(latitude*PI()/180)*POW(SIN(('120.118'*PI()/180-longitude*PI()/180)/2),2)))*1000) <(200000000) ORDER BY score asc LIMIT 1,2   [ RunTime:0.000250s ]
+
+[ 2016-07-14T15:03:41+08:00 ] ERR: (ThinkException) 非法操作:apply
+[ 2016-07-14T15:04:51+08:00 ] ERR: (ThinkException) 非法操作:apply
+[ 2016-07-14T15:08:36+08:00 ] ERR: (ThinkException) 非法操作:apply
+[ 2016-07-14T15:09:30+08:00 ] ERR: (ThinkException) 非法操作:friends
+[ 2016-07-14T15:11:44+08:00 ] ERR: (ThinkException) 非法操作:apply
+[ 2016-07-14T15:13:23+08:00 ] ERR: (ThinkException) 无法加载模块:Diymen
+[ 2016-07-14T15:13:37+08:00 ] ERR: (ThinkException) 无法加载模块:Diymen
+[ 2016-07-14T15:15:22+08:00 ] ERR: (ThinkException) 无法加载模块:Diymen
+[ 2016-07-14T15:28:52+08:00 ] 112.17.244.67 /index.php?g=Hld&m=Ext&a=ajaxext
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000297s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000342s ]
+SQL: SHOW COLUMNS FROM `tp_wxuser` [ RunTime:0.000743s ]
+SQL: SELECT * FROM `tp_wxuser` WHERE ( `token` = 'plvmhl1467344437' ) LIMIT 1   [ RunTime:0.000209s ]
+SQL: SHOW COLUMNS FROM `tp_ahld_ext` [ RunTime:0.000368s ]
+SQL: SHOW COLUMNS FROM `tp_ahld_conf` [ RunTime:0.000307s ]
+SQL: SHOW COLUMNS FROM `tp_userinfo` [ RunTime:0.000496s ]
+SQL: SELECT `value` FROM `tp_ahld_conf` WHERE ( `type` = 1 ) LIMIT 1   [ RunTime:0.000159s ]
+SQL: SELECT * FROM `tp_userinfo` WHERE ( `id` = 0 ) LIMIT 1   [ RunTime:0.000168s ]
+SQL: SELECT `id`,`title`,`addr`,`img`,ROUND(6378.138*2*ASIN(SQRT(POW(SIN((''*PI()/180-latitude*PI()/180)/2),2)+COS(''*PI()/180)*COS(latitude*PI()/180)*POW(SIN((''*PI()/180-longitude*PI()/180)/2),2)))*1000) as distance FROM `tp_ahld_ext` WHERE round(6378.138*2*ASIN(SQRT(POW(SIN((''*PI()/180-latitude*PI()/180)/2),2)+COS(''*PI()/180)*COS(latitude*PI()/180)*POW(SIN((''*PI()/180-longitude*PI()/180)/2),2)))*1000) <(200000000) ORDER BY score asc LIMIT 1,2   [ RunTime:0.000300s ]
+
+[ 2016-07-14T16:13:11+08:00 ] ERR: (ThinkException) 无法加载模块:Hld
+[ 2016-07-14T16:13:17+08:00 ] ERR: (ThinkException) 无法加载模块:Index
+[ 2016-07-14T16:13:20+08:00 ] ERR: (ThinkException) 无法加载模块:Index
+[ 2016-07-14T16:13:23+08:00 ] ERR: (ThinkException) 无法加载模块:Index
+[ 2016-07-14T17:31:43+08:00 ] 218.75.69.250 /index.php?g=Hld&m=Index&a=apply&token=plvmhl1467344437
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000368s ]
+SQL: SHOW COLUMNS FROM `tp_userinfo` [ RunTime:0.000690s ]
+SQL: SELECT * FROM `tp_userinfo` WHERE ( `wecha_id` = 'oktzkwbxksTOGCk9wGLWDV_6gCbA' ) LIMIT 1   [ RunTime:0.000213s ]
+SQL: SHOW COLUMNS FROM `tp_wxuser` [ RunTime:0.000641s ]
+SQL: SELECT * FROM `tp_wxuser` WHERE ( `token` = 'plvmhl1467344437' ) LIMIT 1   [ RunTime:0.000234s ]
+NOTIC: [2] Illegal string offset 'message' /home/project/pig/PigCms/Lib/ORG/Ym/HappyExchangeApi.class.php 第 490 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.147354s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000348s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.147727s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004372s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.152136s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.152325s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.152559s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.152684s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000802s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.152979s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000338s ]
+
+[ 2016-07-14T17:31:55+08:00 ] 218.75.69.250 /index.php?g=Hld&m=Index&a=apply&token=plvmhl1467344437
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000342s ]
+SQL: SHOW COLUMNS FROM `tp_userinfo` [ RunTime:0.000904s ]
+SQL: SELECT * FROM `tp_userinfo` WHERE ( `wecha_id` = 'oktzkwbxksTOGCk9wGLWDV_6gCbA' ) LIMIT 1   [ RunTime:0.000198s ]
+SQL: SHOW COLUMNS FROM `tp_wxuser` [ RunTime:0.000626s ]
+SQL: SELECT * FROM `tp_wxuser` WHERE ( `token` = 'plvmhl1467344437' ) LIMIT 1   [ RunTime:0.000260s ]
+NOTIC: [2] Illegal string offset 'message' /home/project/pig/PigCms/Lib/ORG/Ym/HappyExchangeApi.class.php 第 490 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.153356s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000343s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.153744s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004310s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.158073s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.158336s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.158570s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.158720s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000885s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.159016s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000352s ]
+
+[ 2016-07-14T17:31:59+08:00 ] 218.75.69.250 /index.php?g=Hld&m=Index&a=apply&token=plvmhl1467344437
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000283s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000333s ]
+SQL: SHOW COLUMNS FROM `tp_userinfo` [ RunTime:0.000800s ]
+SQL: SELECT * FROM `tp_userinfo` WHERE ( `wecha_id` = 'oktzkwbxksTOGCk9wGLWDV_6gCbA' ) LIMIT 1   [ RunTime:0.000251s ]
+SQL: SHOW COLUMNS FROM `tp_wxuser` [ RunTime:0.000717s ]
+SQL: SELECT * FROM `tp_wxuser` WHERE ( `token` = 'plvmhl1467344437' ) LIMIT 1   [ RunTime:0.000191s ]
+NOTIC: [2] Illegal string offset 'message' /home/project/pig/PigCms/Lib/ORG/Ym/HappyExchangeApi.class.php 第 490 行.
+INFO: [ view_template ] --START--
+INFO: Run LocationTemplate Behavior [ RunTime:-0.157220s ]
+INFO: [ view_template ] --END-- [ RunTime:0.000366s ]
+INFO: [ view_parse ] --START--
+INFO: Run ParseTemplate Behavior [ RunTime:-0.157611s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004440s ]
+INFO: [ view_filter ] --START--
+INFO: Run ContentReplace Behavior [ RunTime:-0.162080s ]
+INFO: Run TokenBuild Behavior [ RunTime:-0.162288s ]
+INFO: Run WriteHtmlCache Behavior [ RunTime:-0.162516s ]
+INFO: Run ShowRuntime Behavior [ RunTime:-0.162640s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000792s ]
+INFO: [ view_end ] --START--
+INFO: Run ShowPageTrace Behavior [ RunTime:-0.162907s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000326s ]
+
+[ 2016-07-14T19:39:30+08:00 ] ERR: (ThinkException) 无法加载模块:Hld

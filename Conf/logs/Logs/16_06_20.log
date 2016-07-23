@@ -1,0 +1,103 @@
+[ 2016-06-20T15:58:10+08:00 ] 218.75.69.250 /index.php?g=Wap&m=Store&a=addProductToCart&token=tcpbjz1466048616&id=46&twid=&cid=26&count=1&did=0
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000272s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000318s ]
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.000615s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://pig.pinecc.cn' ) LIMIT 1   [ RunTime:0.000185s ]
+NOTIC: [8] Constant STATICS already defined /home/project/pig/PigCms/Lib/Action/BaseAction.class.php 第 129 行.
+SQL: SHOW COLUMNS FROM `tp_wxuser` [ RunTime:0.000571s ]
+SQL: SELECT * FROM `tp_wxuser` WHERE ( `token` = 'tcpbjz1466048616' ) LIMIT 1   [ RunTime:0.000199s ]
+NOTIC: [2048] Non-static method getUserInfoModule::index() should not be called statically, assuming $this from incompatible context /home/project/pig/PigCms/Lib/Action/WapAction.class.php 第 103 行.
+NOTIC: [8] Undefined index: ali /home/project/pig/PigCms/Lib/Action/WapAction.class.php 第 107 行.
+NOTIC: [8] Undefined index: token_oauthed_tcpbjz1466048616 /home/project/pig/PigCms/Lib/Action/WapAction.class.php 第 117 行.
+SQL: SHOW COLUMNS FROM `tp_weixin_account` [ RunTime:0.000360s ]
+SQL: SELECT * FROM `tp_weixin_account` WHERE ( `type` = 1 ) LIMIT 1   [ RunTime:0.000104s ]
+SQL: SHOW COLUMNS FROM `tp_wxuser` [ RunTime:0.000639s ]
+SQL: UPDATE `tp_wxuser` SET `type`='0' WHERE 1 [ RunTime:0.000112s ]
+SQL: SELECT * FROM `tp_weixin_account` WHERE ( `type` = 1 ) LIMIT 1   [ RunTime:0.000109s ]
+NOTIC: [8] Undefined index: wecha_id /home/project/pig/PigCms/Lib/Action/WapAction.class.php 第 178 行.
+NOTIC: [8] Undefined index: wecha_id /home/project/pig/PigCms/Lib/Action/WapAction.class.php 第 178 行.
+NOTIC: [8] Undefined variable: fansInfo /home/project/pig/PigCms/Lib/Action/WapAction.class.php 第 289 行.
+SQL: SHOW COLUMNS FROM `tp_userinfo` [ RunTime:0.000539s ]
+SQL: SELECT * FROM `tp_userinfo` WHERE ( `token` = 'tcpbjz1466048616' ) AND ( `wecha_id` = null ) LIMIT 1   [ RunTime:0.000227s ]
+SQL: SHOW COLUMNS FROM `tp_wechat_group_list` [ RunTime:0.000350s ]
+SQL: SELECT * FROM `tp_wechat_group_list` WHERE ( `token` = 'tcpbjz1466048616' ) AND ( `openid` = null ) LIMIT 1   [ RunTime:0.000133s ]
+NOTIC: [2] unlink(./Conf/logs/Temp/1/c/1c02ebd7bd5acede3dd72a9f32fd1fff.php): No such file or directory /home/project/pig/Lib/Driver/Cache/CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `tp_home` [ RunTime:0.000370s ]
+SQL: SELECT * FROM `tp_home` WHERE ( `token` = 'tcpbjz1466048616' ) LIMIT 1   [ RunTime:0.000152s ]
+NOTIC: [2] unlink(./Conf/logs/Temp/b/3/b3cfdbe6fa051a7119f79a9d4f0f88b2.php): No such file or directory /home/project/pig/Lib/Driver/Cache/CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `tp_catemenu` [ RunTime:0.000391s ]
+SQL: SELECT * FROM `tp_catemenu` WHERE ( `token` = 'tcpbjz1466048616' ) AND ( `status` = 1 ) ORDER BY orderss desc  [ RunTime:0.000209s ]
+NOTIC: [2] unlink(./Conf/logs/Temp/9/a/9ad94ae2481adecba77c780e20aabf92.php): No such file or directory /home/project/pig/Lib/Driver/Cache/CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `tp_users` [ RunTime:0.000459s ]
+SQL: SELECT * FROM `tp_users` WHERE ( `id` = 37 ) LIMIT 1   [ RunTime:0.000144s ]
+SQL: SHOW COLUMNS FROM `tp_user_group` [ RunTime:0.000391s ]
+SQL: SELECT * FROM `tp_user_group` WHERE ( `id` = 4 ) LIMIT 1   [ RunTime:0.000124s ]
+SQL: SHOW COLUMNS FROM `tp_company` [ RunTime:0.000439s ]
+SQL: SELECT * FROM `tp_company` WHERE ( `token` = 'tcpbjz1466048616' ) AND ( `isbranch` = 0 ) LIMIT 1   [ RunTime:0.000190s ]
+SQL: SHOW COLUMNS FROM `tp_product` [ RunTime:0.000451s ]
+SQL: SHOW COLUMNS FROM `tp_product_cat` [ RunTime:0.000347s ]
+SQL: SHOW COLUMNS FROM `tp_company` [ RunTime:0.000546s ]
+SQL: SELECT * FROM `tp_company` WHERE `token`='tcpbjz1466048616' AND `isbranch`=0 LIMIT 1   [ RunTime:0.000215s ]
+SQL: SHOW COLUMNS FROM `tp_product_setting` [ RunTime:0.000512s ]
+SQL: SELECT * FROM `tp_product_setting` WHERE ( `token` = 'tcpbjz1466048616' ) AND ( `cid` = 26 ) LIMIT 1   [ RunTime:0.000138s ]
+SQL: SELECT * FROM `tp_product_cat` WHERE ( `token` = 'tcpbjz1466048616' ) AND ( `cid` = 26 ) AND ( `parentid` = 0 ) ORDER BY sort ASC, id DESC  [ RunTime:0.000217s ]
+SQL: SHOW COLUMNS FROM `tp_twitter_set` [ RunTime:0.000351s ]
+SQL: SELECT * FROM `tp_twitter_set` WHERE ( `token` = 'tcpbjz1466048616' ) AND ( `cid` = 26 ) LIMIT 1   [ RunTime:0.000150s ]
+SQL: SELECT * FROM `tp_product` WHERE ( `id` IN (46) )  [ RunTime:0.000143s ]
+SQL: SHOW COLUMNS FROM `tp_norms` [ RunTime:0.000344s ]
+SQL: SELECT * FROM `tp_norms` WHERE ( `catid` IN ('78') )  [ RunTime:0.000115s ]
+NOTIC: [2] Invalid argument supplied for foreach() /home/project/pig/PigCms/Lib/Action/Wap/StoreAction.class.php 第 549 行.
+SQL: SELECT * FROM `tp_product_cat` WHERE ( `id` IN ('78') )  [ RunTime:0.000125s ]
+SQL: SELECT * FROM `tp_product_setting` WHERE ( `token` = 'tcpbjz1466048616' ) AND ( `cid` = 26 ) LIMIT 1   [ RunTime:0.000169s ]
+
+[ 2016-06-20T16:23:25+08:00 ] 218.75.69.250 /index.php?g=Wap&m=Store&a=addProductToCart&token=tcpbjz1466048616&id=46&wecha_id=d4624c36b6795d1d99dcf0547af5443d&twid=&cid=26&count=1&did=0
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000288s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000337s ]
+SQL: SHOW COLUMNS FROM `tp_agent` [ RunTime:0.000676s ]
+SQL: SELECT * FROM `tp_agent` WHERE ( `siteurl` = 'http://pig.pinecc.cn' ) LIMIT 1   [ RunTime:0.000168s ]
+NOTIC: [8] Constant STATICS already defined /home/project/pig/PigCms/Lib/Action/BaseAction.class.php 第 129 行.
+SQL: SHOW COLUMNS FROM `tp_wxuser` [ RunTime:0.000614s ]
+SQL: SELECT * FROM `tp_wxuser` WHERE ( `token` = 'tcpbjz1466048616' ) LIMIT 1   [ RunTime:0.000186s ]
+NOTIC: [2048] Non-static method getUserInfoModule::index() should not be called statically, assuming $this from incompatible context /home/project/pig/PigCms/Lib/Action/WapAction.class.php 第 103 行.
+NOTIC: [8] Undefined index: ali /home/project/pig/PigCms/Lib/Action/WapAction.class.php 第 107 行.
+NOTIC: [8] Undefined index: token_oauthed_tcpbjz1466048616 /home/project/pig/PigCms/Lib/Action/WapAction.class.php 第 117 行.
+SQL: SHOW COLUMNS FROM `tp_userinfo` [ RunTime:0.000498s ]
+SQL: SELECT * FROM `tp_userinfo` WHERE ( `token` = 'tcpbjz1466048616' ) AND ( `wecha_id` = 'd4624c36b6795d1d99dcf0547af5443d' ) LIMIT 1   [ RunTime:0.002181s ]
+SQL: SHOW COLUMNS FROM `tp_weixin_account` [ RunTime:0.000331s ]
+SQL: SELECT * FROM `tp_weixin_account` WHERE ( `type` = 1 ) LIMIT 1   [ RunTime:0.000101s ]
+SQL: SHOW COLUMNS FROM `tp_wxuser` [ RunTime:0.000618s ]
+SQL: UPDATE `tp_wxuser` SET `type`='0' WHERE 1 [ RunTime:0.000105s ]
+SQL: SELECT * FROM `tp_userinfo` WHERE ( `token` = 'tcpbjz1466048616' ) AND ( `wecha_id` = 'd4624c36b6795d1d99dcf0547af5443d' ) LIMIT 1   [ RunTime:0.000225s ]
+SQL: SHOW COLUMNS FROM `tp_wechat_group_list` [ RunTime:0.000333s ]
+SQL: SELECT * FROM `tp_wechat_group_list` WHERE ( `token` = 'tcpbjz1466048616' ) AND ( `openid` = 'd4624c36b6795d1d99dcf0547af5443d' ) LIMIT 1   [ RunTime:0.000129s ]
+NOTIC: [2] unlink(./Conf/logs/Temp/d/1/d1f0c5924bb357bde28050c99251ae3e.php): No such file or directory /home/project/pig/Lib/Driver/Cache/CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `tp_home` [ RunTime:0.000380s ]
+SQL: SELECT * FROM `tp_home` WHERE ( `token` = 'tcpbjz1466048616' ) LIMIT 1   [ RunTime:0.000162s ]
+NOTIC: [2] unlink(./Conf/logs/Temp/b/3/b3cfdbe6fa051a7119f79a9d4f0f88b2.php): No such file or directory /home/project/pig/Lib/Driver/Cache/CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `tp_catemenu` [ RunTime:0.000333s ]
+SQL: SELECT * FROM `tp_catemenu` WHERE ( `token` = 'tcpbjz1466048616' ) AND ( `status` = 1 ) ORDER BY orderss desc  [ RunTime:0.002844s ]
+NOTIC: [2] unlink(./Conf/logs/Temp/9/a/9ad94ae2481adecba77c780e20aabf92.php): No such file or directory /home/project/pig/Lib/Driver/Cache/CacheFile.class.php 第 176 行.
+SQL: SHOW COLUMNS FROM `tp_users` [ RunTime:0.000425s ]
+SQL: SELECT * FROM `tp_users` WHERE ( `id` = 37 ) LIMIT 1   [ RunTime:0.000142s ]
+SQL: SHOW COLUMNS FROM `tp_user_group` [ RunTime:0.000420s ]
+SQL: SELECT * FROM `tp_user_group` WHERE ( `id` = 4 ) LIMIT 1   [ RunTime:0.000133s ]
+SQL: SHOW COLUMNS FROM `tp_company` [ RunTime:0.000423s ]
+SQL: SELECT * FROM `tp_company` WHERE ( `token` = 'tcpbjz1466048616' ) AND ( `isbranch` = 0 ) LIMIT 1   [ RunTime:0.000179s ]
+SQL: SHOW COLUMNS FROM `tp_product` [ RunTime:0.003894s ]
+SQL: SHOW COLUMNS FROM `tp_product_cat` [ RunTime:0.000387s ]
+SQL: SHOW COLUMNS FROM `tp_company` [ RunTime:0.000454s ]
+SQL: SELECT * FROM `tp_company` WHERE `token`='tcpbjz1466048616' AND `isbranch`=0 LIMIT 1   [ RunTime:0.000169s ]
+SQL: SHOW COLUMNS FROM `tp_product_setting` [ RunTime:0.000335s ]
+SQL: SELECT * FROM `tp_product_setting` WHERE ( `token` = 'tcpbjz1466048616' ) AND ( `cid` = 26 ) LIMIT 1   [ RunTime:0.000135s ]
+SQL: SELECT * FROM `tp_product_cat` WHERE ( `token` = 'tcpbjz1466048616' ) AND ( `cid` = 26 ) AND ( `parentid` = 0 ) ORDER BY sort ASC, id DESC  [ RunTime:0.000196s ]
+SQL: SHOW COLUMNS FROM `tp_twitter_set` [ RunTime:0.000308s ]
+SQL: SELECT * FROM `tp_twitter_set` WHERE ( `token` = 'tcpbjz1466048616' ) AND ( `cid` = 26 ) LIMIT 1   [ RunTime:0.000136s ]
+SQL: SELECT * FROM `tp_product` WHERE ( `id` IN (46) )  [ RunTime:0.000135s ]
+SQL: SHOW COLUMNS FROM `tp_norms` [ RunTime:0.000289s ]
+SQL: SELECT * FROM `tp_norms` WHERE ( `catid` IN ('78') )  [ RunTime:0.000111s ]
+NOTIC: [2] Invalid argument supplied for foreach() /home/project/pig/PigCms/Lib/Action/Wap/StoreAction.class.php 第 549 行.
+SQL: SELECT * FROM `tp_product_cat` WHERE ( `id` IN ('78') )  [ RunTime:0.000117s ]
+SQL: SELECT * FROM `tp_product_setting` WHERE ( `token` = 'tcpbjz1466048616' ) AND ( `cid` = 26 ) LIMIT 1   [ RunTime:0.000124s ]
+

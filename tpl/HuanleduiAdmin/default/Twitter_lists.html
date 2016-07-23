@@ -1,0 +1,279 @@
+﻿<include file="Public:head"/>  
+<script src="/tpl/static/artDialog/jquery.artDialog.js?skin=default"></script>
+<script src="/tpl/static/artDialog/plugins/iframeTools.js"></script>
+<script src="{pigcms::RES}/js/cart/jscolor.js" type="text/javascript"></script>
+<style>
+    #tags li{
+        height:35px;line-height: 1.5em;
+    }
+
+</style>
+<div class="content">
+    <div class="cLineB"> 
+        <h4>推客管理</h4> 
+        <a href="javascript:history.go(-1);" class="right btnGrayS vm" style="margin-top:-27px">返回</a>
+    </div>
+    <div style="background:#fefbe4;border:1px solid #f3ecb9;color:#993300;padding:10px;margin-top:5px;">
+        <span>温馨提示：请按提示操作</span>
+    </div>
+
+    <div id="tags">
+        <a href="javascript:void(0)" class="chooseall " val=true style="background-color:#2F8BC9;text-align:center;display:inline-block;height:20px;border-radius:2px; padding:2px 8px;line-height: 1.5em;color:#fff;font-size:14px;text-decoration: none;"   >全选/取消</a>
+        <a href="javascript:void(0)" onclick="delAll()" style="background-color:#2F8BC9;text-align:center;display:inline-block;height:20px;border-radius:2px; padding:2px 8px;line-height: 1.5em;color:#fff;font-size:14px;text-decoration: none;">删除</a>
+        <a href="javascript:void(0)" onclick="add()" class="btnGreen">添加推客</a>
+        <a href="javascript:void(0)" onclick="excel_out()" class="btnGreen">导出勾选或全部列表</a>
+        <form id="myform" method="post" action='index.php?g=HuanleduiAdmin&m=Twitter&a=lists&&token={pigcms:$token}' style="float:right">
+            <input type="text" value="{pigcms::I('pid')}" name="pid" placeholder="请输入会员编号进行查询他的下级推客" style="right:140px;display:inline-block;height:31px;width:200px;border-radius:2px; padding:2px 8px;line-height: 1.5em;font-size:14px;border:1px solid #EEEEEE;"/>
+            <input type="submit" value="搜索" style="right:80px;display:inline-block;height:31px;width:50px;border-radius:2px;color:#fff;padding:2px 8px;line-height:1.5em;background-color:#2F8BC9;font-size:14px;"/>
+        </form>
+    </div>
+    <div class="msgWrap">
+        <form method="post"  action="" id="info" >
+            <input type="hidden" name="token" value="{pigcms:$token}" id="mb_id">
+            <TABLE class="ListProduct" border="0" cellSpacing="0" cellPadding="0" width="100%">
+                <THEAD>
+                    <tr>
+                        <th style="width:50px;text-align:center">选择</th>
+                        <th width="60" style="text-align:center">会员编号</th>
+                        <th width="120" style="text-align:center">微信头像</th>
+                        <th width="120" style="text-align:center">微信昵称</th>
+                        <th width="120" style="text-align:center">真实姓名</th>
+                        <th width="120" style="text-align:center">欢乐兑账号</th>
+                        <th width="100" style="text-align:center">获得积分</th>
+                        <th width="100" style="text-align:center">状态</th>
+                        <th width="100" style="text-align:center">操作</th>
+                    </tr>
+                </THEAD>
+                <TBODY>
+                    <TR></TR>
+                <volist id="item" name="dat">
+                    <TR>
+                        <TD style="text-align:center"><input type="checkbox" name="c_id[]" value="{pigcms:$item.id}" class="checkitem"></TD>
+                        <TD style="text-align:center">{pigcms:$item.id}</TD>
+                        <TD style="text-align:center"><img src="{pigcms:$item.portrait}" width="50px" height="50px"></TD>
+                        <TD style="text-align:center">{pigcms:$item.wechaname}</TD>
+                        <TD style="text-align:center">{pigcms:$item.truename}</TD>
+                        <TD style="text-align:center">{pigcms:$item.hld_username}</TD>
+                        <TD style="text-align:center">{pigcms:$item.point}</TD>
+                        <TD style="text-align:center"><if condition="$item.type eq 0"> 游客
+                        <elseif condition="$item.type eq 1"/>会员
+                        <elseif condition="$item.type eq 2" />推客<else />未知
+                    </if></TD>
+
+                    <TD style="text-align:center">
+                        <a href="{pigcms::U('HuanleduiAdmin/Twitter/edit', array('token' => $token, 'id' => $item['id']))}">编辑</a>
+                        <a href="javascript:void(0)" onclick="del('{pigcms:$item.id}')">删除</a>
+                        <a href="{pigcms::U('HuanleduiAdmin/Twitter/lookpoints', array('token' => $token, 'id' => $item['member_id']))}">查看积分</a><br/>
+                        <a href="{pigcms::U('HuanleduiAdmin/Twitter/lists', array('token' => $token, 'pid' => $item['id']))}" >查看下级会员</a></TD>
+                    </TR>
+                </volist>
+                </TBODY>
+            </TABLE>
+        </form>
+
+    </div>
+    <div class="cLine">
+        <div class="pageNavigator right">
+            <div class="pages">{pigcms:$page}</div>
+        </div>
+        <div class="clr"></div>
+    </div>
+</div>  
+<div class="clr"></div>
+<include file="Public:footer"/>
+</div>
+</div>
+</div> 
+
+<script>
+
+    function add() {
+        art.dialog({
+            title: '消息提示',
+            content: "<img src='{pigcms::RES}/images/ewmtotwitter.png'>",
+            lock: true,
+            cancelVal: '关闭',
+            cancel: true
+        });
+    }
+    /*
+     * 功能：全选/取消
+     * date:2016/06/30 11:29
+     * @par:ver 1.0 create by huangweiming
+     * @returns {undefined}
+     */
+    $(".chooseall").attr("val", "checked");
+    $(".chooseall").click(function () {
+        if ($(".chooseall").attr("val") == "checked") {
+            $(".checkitem").attr("checked", "checked");
+            $(".chooseall").attr("val", "")
+        } else {
+            $(".checkitem").attr("checked", "");
+            $(".chooseall").attr("val", "checked")
+        }
+    });
+//删除记录
+    function del(id)
+    {
+        art.dialog({
+            title: '消息提示',
+            content: '确定要删除吗？',
+            lock: true,
+            okVal: '确定',
+            ok: function () {
+                var data = {id: id, token: '{pigcms:$token}'};
+                $.post('index.php?g=HuanleduiAdmin&m=Twitter&a=del', data, function (response) {
+                    if (response.status == 1) {
+                        art.dialog({
+                            title: '消息提示',
+                            content: response.info,
+                            lock: true
+                        });
+                        setInterval(function () {
+                            location.href = response.url;
+                        }, 2000);
+                    } else {
+                        art.dialog({title: '消息提示', time: 2, content: response.info});
+                    }
+
+                }, 'json');
+            },
+            cancelVal: '取消',
+            cancel: true
+        });
+
+    }
+    /*
+     * 功能：执行全部删除操作
+     * date:2016/06/30 11:29
+     * @par:ver 1.0 create by huangweiming
+     * @returns {undefined}
+     */
+
+    function delAll() {
+        var id = [];
+        var k = 0;
+        $(".checkitem").each(function (i) {
+            if ($(this).attr("checked")) {
+                id[k] = $(this).val();
+                k++;
+            }
+        });
+        if (!id || id == null || id == '') {
+            art.dialog({
+                title: '消息提示',
+                content: '您还没有勾选要删除的选项!',
+                lock: true,
+                time: 2
+            });
+            return;
+        }
+        var data = {id: id, token: '{pigcms:$token}'};
+        art.dialog({
+            title: '消息提示',
+            content: '确定要删除吗？',
+            lock: true,
+            okVal: '确定',
+            ok: function () {
+                $.post('index.php?g=HuanleduiAdmin&m=Twitter&a=del', data, function (response) {
+                    if (response.status == 1) {
+                        art.dialog({
+                            title: '消息提示',
+                            content: response.info,
+                            lock: true
+                        });
+                        setInterval(function () {
+                            location.href = response.url;
+                        }, 2000);
+                    } else {
+                        art.dialog({title: '消息提示', time: 2, content: response.msg});
+                    }
+
+                }, 'json');
+            },
+            cancelVal: '取消',
+            cancel: true
+        });
+    }
+
+    /*
+     * 功能：导出excel
+     * date:2016/07/06 11:00
+     * @par:ver 1.0 create by huangweiming
+     * @returns {undefined}
+     */
+    function excel_out() {
+        var id = [];
+        var k = 0;
+        $(".checkitem").each(function (i) {
+            if ($(this).attr("checked")) {
+                id[k] = $(this).val();
+                k++;
+            }
+        });
+        var data = '';
+        var content = "";
+        if (!id || id == null || id == '') {
+            content = "你确定要导出全部数据吗？";
+        } else {
+            content = "你确定要导出所选的这些数据吗";
+            id = id.join(",");
+            data = "&id=" + id;
+        }
+        art.dialog({
+            title: '消息提示',
+            content: content,
+            lock: true,
+            okVal: '确定',
+            ok: function () {
+                var link = "{pigcms::U('Twitter/excel_out_lists')}";
+                link = link + data;
+                location.href = link;
+            },
+            cancelVal: '取消',
+            cancel: true
+        });
+
+    }
+
+</script>
+
+<script>
+// 全选/反选
+    $(function () {
+        $(".checkall").click(function () {
+            var that = this;
+            var val = $(that).attr('checked');
+            $(".checkitem").each(function () {
+                $(this).attr('checked', val);
+            })
+        })
+        $(".checkitem").click(function () {
+            var that = this;
+            var val = $(that).attr('checked');
+            if (val) //如果全部选中则是全选
+            {
+                var flag = 1;
+                $(".checkitem").each(function () {
+                    var item = $(this).attr('checked');
+                    if (item == false)
+                    {
+                        flag = 0;
+                    }
+                })
+                if (flag == 1)
+                {
+                    $(".checkall").attr('checked', val);
+                }
+            } else //只要有没选中的就不是全选
+            {
+                var flag = 0;
+                $(".checkall").attr('checked', val);
+            }
+        })
+    })
+
+
+</script>
+
+

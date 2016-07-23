@@ -1,0 +1,63 @@
+[ 2016-07-16T11:45:37+08:00 ] ERR: (ThinkException) 表达式错误:5
+[ 2016-07-16T11:46:05+08:00 ] ERR: (ThinkException) 表达式错误:5
+[ 2016-07-16T11:46:50+08:00 ] ERR: (ThinkException) 表达式错误:1
+[ 2016-07-16T11:47:25+08:00 ] ERR: (ThinkException) 表达式错误:1
+[ 2016-07-16T11:48:16+08:00 ] ERR: (ThinkException) 表达式错误:1
+[ 2016-07-16T16:36:47+08:00 ] 112.17.244.154 /index.php?g=Hld&m=Ext&a=ajaxext
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000352s ]
+SQL: SHOW COLUMNS FROM `tp_userinfo` [ RunTime:0.000750s ]
+SQL: SELECT * FROM `tp_userinfo` WHERE ( `wecha_id` = 'oktzkwbxksTOGCk9wGLWDV_6gCbA' ) LIMIT 1   [ RunTime:0.000195s ]
+SQL: SHOW COLUMNS FROM `tp_wxuser` [ RunTime:0.000631s ]
+SQL: SELECT * FROM `tp_wxuser` WHERE ( `token` = 'plvmhl1467344437' ) LIMIT 1   [ RunTime:0.000205s ]
+SQL: SHOW COLUMNS FROM `tp_ahld_ext` [ RunTime:0.000356s ]
+SQL: SHOW COLUMNS FROM `tp_ahld_conf` [ RunTime:0.000323s ]
+SQL: SELECT `value` FROM `tp_ahld_conf` WHERE ( `type` = 1 ) LIMIT 1   [ RunTime:0.000137s ]
+SQL: SELECT `id`,`title`,`addr`,`img`,ROUND(6378.138*2*ASIN(SQRT(POW(SIN(('30.33501'*PI()/180-latitude*PI()/180)/2),2)+COS('30.33501'*PI()/180)*COS(latitude*PI()/180)*POW(SIN(('120.1047'*PI()/180-longitude*PI()/180)/2),2)))*1000) as distance FROM `tp_ahld_ext` WHERE round(6378.138*2*ASIN(SQRT(POW(SIN(('30.33501'*PI()/180-latitude*PI()/180)/2),2)+COS('30.33501'*PI()/180)*COS(latitude*PI()/180)*POW(SIN(('120.1047'*PI()/180-longitude*PI()/180)/2),2)))*1000) <(200000000) ORDER BY score asc LIMIT 0,10   [ RunTime:0.000249s ]
+
+[ 2016-07-16T16:36:57+08:00 ] 112.17.244.154 /index.php?g=Hld&m=Mall&a=ajax_show_mall
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000296s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000342s ]
+SQL: SHOW COLUMNS FROM `tp_userinfo` [ RunTime:0.000692s ]
+SQL: SELECT * FROM `tp_userinfo` WHERE ( `wecha_id` = 'oktzkwbxksTOGCk9wGLWDV_6gCbA' ) LIMIT 1   [ RunTime:0.000181s ]
+SQL: SHOW COLUMNS FROM `tp_wxuser` [ RunTime:0.000631s ]
+SQL: SELECT * FROM `tp_wxuser` WHERE ( `token` = 'plvmhl1467344437' ) LIMIT 1   [ RunTime:0.000181s ]
+SQL: SHOW COLUMNS FROM `tp_ahld_mall` [ RunTime:0.000389s ]
+SQL: SHOW COLUMNS FROM `tp_ahld_mtype` [ RunTime:0.000308s ]
+SQL: SHOW COLUMNS FROM `tp_ahld_conf` [ RunTime:0.000347s ]
+SQL: SELECT `value` FROM `tp_ahld_conf` WHERE ( `type` = 3 ) LIMIT 1   [ RunTime:0.000141s ]
+SQL: SELECT `id`,`name`,`level`,`pid` FROM `tp_ahld_mtype`  [ RunTime:0.000112s ]
+SQL: select tp_ahld_mall.*,ROUND(6378.138*2*ASIN(SQRT(POW(SIN(('30.33501'*PI()/180-latitude*PI()/180)/2),2)+COS('30.33501'*PI()/180)*COS(latitude*PI()/180)*POW(SIN(('120.1047'*PI()/180-longitude*PI()/180)/2),2)))*1000) as distance from tp_ahld_mall where ROUND(6378.138*2*ASIN(SQRT(POW(SIN(('30.33501'*PI()/180-latitude*PI()/180)/2),2)+COS('30.33501'*PI()/180)*COS(latitude*PI()/180)*POW(SIN(('120.1047'*PI()/180-longitude*PI()/180)/2),2)))*1000) < 12000 and type in (9,13,12,21,8)  order by score asc limit 0,11 [ RunTime:0.000332s ]
+
+[ 2016-07-16T16:37:29+08:00 ] 112.17.244.154 /index.php?g=Hld&m=Mall&a=ajax_show_mall
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000290s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000334s ]
+SQL: SHOW COLUMNS FROM `tp_userinfo` [ RunTime:0.000672s ]
+SQL: SELECT * FROM `tp_userinfo` WHERE ( `wecha_id` = 'oktzkwbxksTOGCk9wGLWDV_6gCbA' ) LIMIT 1   [ RunTime:0.000179s ]
+SQL: SHOW COLUMNS FROM `tp_wxuser` [ RunTime:0.000581s ]
+SQL: SELECT * FROM `tp_wxuser` WHERE ( `token` = 'plvmhl1467344437' ) LIMIT 1   [ RunTime:0.000175s ]
+SQL: SHOW COLUMNS FROM `tp_ahld_mall` [ RunTime:0.000376s ]
+SQL: SHOW COLUMNS FROM `tp_ahld_mtype` [ RunTime:0.000312s ]
+SQL: SHOW COLUMNS FROM `tp_ahld_conf` [ RunTime:0.000277s ]
+SQL: SELECT `value` FROM `tp_ahld_conf` WHERE ( `type` = 3 ) LIMIT 1   [ RunTime:0.000152s ]
+SQL: SELECT `id`,`name`,`level`,`pid` FROM `tp_ahld_mtype`  [ RunTime:0.000111s ]
+SQL: select tp_ahld_mall.*,ROUND(6378.138*2*ASIN(SQRT(POW(SIN(('30.33501'*PI()/180-latitude*PI()/180)/2),2)+COS('30.33501'*PI()/180)*COS(latitude*PI()/180)*POW(SIN(('120.1047'*PI()/180-longitude*PI()/180)/2),2)))*1000) as distance from tp_ahld_mall where ROUND(6378.138*2*ASIN(SQRT(POW(SIN(('30.33501'*PI()/180-latitude*PI()/180)/2),2)+COS('30.33501'*PI()/180)*COS(latitude*PI()/180)*POW(SIN(('120.1047'*PI()/180-longitude*PI()/180)/2),2)))*1000) < 12000 and type in (9,13,12,21,8)  order by score asc limit 0,3 [ RunTime:0.000294s ]
+
+[ 2016-07-16T16:37:30+08:00 ] 112.17.244.154 /index.php?g=Hld&m=Mall&a=ajax_showmore
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000280s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000325s ]
+SQL: SHOW COLUMNS FROM `tp_userinfo` [ RunTime:0.000651s ]
+SQL: SELECT * FROM `tp_userinfo` WHERE ( `wecha_id` = 'oktzkwbxksTOGCk9wGLWDV_6gCbA' ) LIMIT 1   [ RunTime:0.000183s ]
+SQL: SHOW COLUMNS FROM `tp_wxuser` [ RunTime:0.000690s ]
+SQL: SELECT * FROM `tp_wxuser` WHERE ( `token` = 'plvmhl1467344437' ) LIMIT 1   [ RunTime:0.000179s ]
+SQL: SHOW COLUMNS FROM `tp_ahld_mall` [ RunTime:0.000394s ]
+SQL: SHOW COLUMNS FROM `tp_ahld_mtype` [ RunTime:0.000372s ]
+SQL: SHOW COLUMNS FROM `tp_ahld_conf` [ RunTime:0.000281s ]
+SQL: SELECT `value` FROM `tp_ahld_conf` WHERE ( `type` = 3 ) LIMIT 1   [ RunTime:0.000164s ]
+SQL: SELECT `id`,`name`,`level`,`pid` FROM `tp_ahld_mtype`  [ RunTime:0.000113s ]
+SQL: select tp_ahld_mall.*,ROUND(6378.138*2*ASIN(SQRT(POW(SIN(('30.33501'*PI()/180-latitude*PI()/180)/2),2)+COS('30.33501'*PI()/180)*COS(latitude*PI()/180)*POW(SIN(('120.1047'*PI()/180-longitude*PI()/180)/2),2)))*1000) as distance from tp_ahld_mall where ROUND(6378.138*2*ASIN(SQRT(POW(SIN(('30.33501'*PI()/180-latitude*PI()/180)/2),2)+COS('30.33501'*PI()/180)*COS(latitude*PI()/180)*POW(SIN(('120.1047'*PI()/180-longitude*PI()/180)/2),2)))*1000) < 12000 and type in (9,13,12,21,8)  order by score asc limit 2,3 [ RunTime:0.000319s ]
+

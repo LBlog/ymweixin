@@ -1,0 +1,112 @@
+<include file="Public:head"/>  
+<script src="/tpl/static/artDialog/jquery.artDialog.js?skin=default"></script>
+<script src="/tpl/static/artDialog/plugins/iframeTools.js"></script>
+<script src="{pigcms::RES}/js/cart/jscolor.js" type="text/javascript"></script>
+<div class="content">
+<div class="cLineB">
+
+<!-- <ul id="tags">
+  <li><a href="{pigcms::U('Api/add_grade',array('token'=>$token))}">添加等级</a> </li>
+   <li class="selectTag"><a href="{pigcms::U('Member_card/center_all',array('token'=>$token))}">所有注册会员</a></li>
+  <div class="clr"></div>
+</ul>  -->
+
+<div class="cLineB">
+  <h4>会员列表</h4>
+
+  </div>
+<div class="clr"></div>
+</div>
+
+
+<div class="cLine">
+<form method="post"  action="" id="info" >
+关键词：
+<input type="text" class="px" name="search" value="{pigcms:$search}" style="height:25px;width:150px;" placeholder="真姓名或者手机号">
+<input type="submit" class="btnGrayS" value="搜索">
+</form>
+<div class="clr"></div>
+</div>
+<div class="msgWrap">
+<form method="post"  action="" id="info" >
+<input type="hidden" name="token" value="{pigcms:$token}" id="mb_id">
+<TABLE class="ListProduct" border="0" cellSpacing="0" cellPadding="0" width="100%">
+<THEAD>
+<tr>
+<th width="120" style="text-align:center">会员id</th>
+<th width="120" style="text-align:center">微信昵称</th>
+<th width="120" style="text-align:center">微信头像</th>
+<th width="120" style="text-align:center">会员姓名</th>
+<th width="120" style="text-align:center">会员手机号</th>
+<th width="120" style="text-align:center">性别</th>
+<th width="120" style="text-align:center">等级</th>
+<th width="120" style="text-align:center">积分</th>
+<th width="120" style="text-align:center">车牌</th>
+<th width="120" style="text-align:center">注册归属地</th>
+<th width="120" style="text-align:center">推荐用户名称</th>
+<th width="100" style="text-align:center">操作</th>
+</tr>
+</THEAD>
+<TBODY>
+<TR></TR>
+<volist id="item" name="user_info">
+<TR>
+<TD style="text-align:center">{pigcms:$item.id}</TD>
+<TD style="text-align:center">{pigcms:$item.wechaname}</TD>
+<TD style="text-align:center"><img src="{pigcms:$item.portrait}" style="max-height:50px;"/></TD>
+<TD style="text-align:center">{pigcms:$item.truename}</TD>
+<TD style="text-align:center">{pigcms:$item.tel}</TD>
+<TD style="text-align:center">{pigcms:$item.sex}</TD>
+<TD style="text-align:center">{pigcms:$item.rank}</TD>
+<TD style="text-align:center">{pigcms:$item.intergal}</TD>
+<TD style="text-align:center">{pigcms:$item.car_num}</TD>
+<TD style="text-align:center">{pigcms:$item.province}{pigcms:$item.city}{pigcms:$item.district}</TD>
+<TD style="text-align:center">{pigcms:$item.tname}</TD>
+<TD style="text-align:center"> <a href=<?php U('Apiuser/edit');?>"?g=User&m=Apiuser&a=edit&token={pigcms:$token}&id={pigcms:$item.id}">编辑</a>
+<a href="javascript:void(0)" onclick="del(this,{pigcms:$item.id})">删除</a></TD>
+</TR>
+</volist>
+</TBODY>
+</TABLE>
+</form>
+
+</div>
+<div class="cLine">
+<div class="pageNavigator right">
+<div class="pages">{pigcms:$page}</div>
+</div>
+<div class="clr"></div>
+</div>
+</div>  
+        <div class="clr"></div>
+    <include file="Public:footer"/>
+      </div>
+    </div>
+  </div> 
+
+<script>
+function del(obj,id)
+{ 
+  if(confirm("确定删除这个记录？"))
+    {
+        var data = {"id":id};
+        var parent = $(obj).parent().parent();
+        $.ajax({
+        type:"post",
+        url:<?php U('Api/ajaxuserinfo');?>"?g=User&m=Api&a=ajaxuserinfo&token={pigcms:$token}&id={pigcms:$item.id}",
+       // dataType:"json",
+        data:data,
+        success:function(msg)
+        {
+            console.log(msg);
+            if(msg==1)
+            {
+                parent.remove();
+                alert('该记录已删除');
+            }
+        }
+    })
+    }
+   
+}
+</script>

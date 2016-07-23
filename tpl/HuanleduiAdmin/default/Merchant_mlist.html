@@ -1,0 +1,242 @@
+<include file="Public:head"/>
+<script src="./tpl/static/artDialog/jquery.artDialog.js?skin=default"></script>
+<script src="./tpl/static/artDialog/plugins/iframeTools.js"></script>
+<style>
+    .cLine {
+        overflow: hidden;
+        padding: 5px 0;
+        color:#000000;
+    }
+    .alert {
+        padding: 8px 35px 0 10px;
+        text-shadow: none;
+        -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        background-color: #f9edbe;
+        border: 1px solid #f0c36d;
+        -webkit-border-radius: 2px;
+        -moz-border-radius: 2px;
+        border-radius: 2px;
+        color: #333333;
+        margin-top: 5px;
+    }
+    .alert p {
+        margin: 0 0 10px;
+        display: block;
+    }
+    .alert .bold{
+        font-weight:bold;
+    }
+</style>
+<div class="content">
+    <div class="cLineB"> 
+        <h4>商家列表</h4> 
+    </div>
+    <div style="background:#fefbe4;border:1px solid #f3ecb9;color:#993300;padding:10px;margin-top:5px;">
+        <span>温馨提示：请按提示操作</span>
+    </div>
+    <ul id="tags">
+        <a href="javascript:void(0)" class="chooseall " val=true style="background-color:#2F8BC9;text-align:center;display:inline-block;height:20px;border-radius:2px; padding:2px 8px;line-height: 1.5em;color:#fff;font-size:14px;text-decoration: none;"   >全选/取消</a>
+        <a href="javascript:void(0)" onclick="delAll()" style="background-color:#2F8BC9;text-align:center;display:inline-block;height:20px;border-radius:2px; padding:2px 8px;line-height: 1.5em;color:#fff;font-size:14px;text-decoration: none;">删除</a>
+        <a href="{pigcms::U('Merchant/add',array('token'=>$token))}" class="btnGreen">添加商家</a>
+        <a href="{pigcms::U('Merchant/setext',array('token'=>$token))}" class="btnGreen">商家显示范围设置</a>
+        <a href="javascript:void(0)" onclick="excel_out()" class="btnGreen">导出勾选或全部列表</a>
+        <form id="myform" method="post" action='index.php?g=HuanleduiAdmin&m=Merchant&a=mlist&&token={pigcms:$token}' style="float:right">
+            <input type="text" value="{pigcms::I('search')}" name="search" placeholder="请输入商家名称或电话" style="right:140px;display:inline-block;height:31px;width:200px;border-radius:2px; padding:2px 8px;line-height: 1.5em;font-size:14px;border:1px solid #EEEEEE;"/>
+            <input type="submit" value="搜索" style="right:80px;display:inline-block;height:31px;width:50px;border-radius:2px;color:#fff;padding:2px 8px;line-height:1.5em;background-color:#2F8BC9;font-size:14px;"/>
+        </form>
+        <div class="clr"></div>
+    </ul> 
+
+    <div class="msgWrap form">
+        <div class="bdrcontent">
+            <p style="height:40px;font-weight:bold;line-height:40px;">商家显示范围：{pigcms:$value}</p>
+            <div id="div_ptype">
+                <table class="ListProduct" border="0" cellspacing="0" cellpadding="0" width="100%" style="text-align:center">
+                    <thead>
+                        <tr>
+                            <th style=" width:20px;text-align:center">选择</th>
+                            <!--<th style=" width:20px;text-align:center">编号</th>-->
+                            <th style=" width:30px;text-align:center">商家名称</th>
+                            <th style=" width:30px;text-align:center">电话</th>
+                            <th style=" width:30px;text-align:center">类别</th>
+                            <th style=" width:30px;text-align:center">经度</th>
+                            <th style=" width:30px;text-align:center">纬度</th>
+                            <th style=" width:30px;text-align:center">排序</th>
+                            <th style=" width:40px;text-align:center">操作</th>
+                        </tr>
+                    </thead>
+                    <volist name="dat" id="vo">
+                        <tr>
+                            <td><input type="checkbox" class="checkitem" value="{pigcms:$vo['id']}" name="id[]"/></td>
+                            <!--<td>{pigcms:$vo['id']}</td>-->
+                            <td>{pigcms:$vo['title']}</td>
+                            <td>{pigcms:$vo['tel']}</td>
+                            <td>{pigcms:$vo['name']}</td>
+                            <td>{pigcms:$vo['longitude']}</td>
+                            <td>{pigcms:$vo['latitude']}</td>
+                            <td>{pigcms:$vo['score']}</td>
+                            <td class="norightborder" align="center">
+                                <a href="{pigcms::U('Merchant/update',array('id' => $vo['id'], 'token' => $token))}">修改</a>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <a href="javascript:del({pigcms:$vo['id']});" >删除</a>
+                            </td></tr>
+                    </volist>
+                </table>
+                <script>
+                    /*
+                     * 功能：全选/取消
+                     * date:2016/06/30 11:29
+                     * @par:ver 1.0 create by huangweiming
+                     * @returns {undefined}
+                     */
+                    $(".chooseall").attr("val", "checked");
+                    $(".chooseall").click(function () {
+                        if ($(".chooseall").attr("val") == "checked") {
+                            $(".checkitem").attr("checked", "checked");
+                            $(".chooseall").attr("val", "")
+                        } else {
+                            $(".checkitem").attr("checked", "");
+                            $(".chooseall").attr("val", "checked")
+                        }
+                    });
+                    /*
+                     * 功能：执行删除操作
+                     * date:2016/06/30 11:29
+                     * @par:ver 1.0 create by huangweiming
+                     * @returns {undefined}
+                     */
+
+                    function del(id) {
+
+                        art.dialog({
+                            title: '消息提示',
+                            content: '确定要删除吗？',
+                            lock: true,
+                            okVal: '确定',
+                            ok: function () {
+                                var data = {id: id, token: '{pigcms:$token}'};
+                                $.post('index.php?g=Api&m=Merchant&a=del_merchant', data, function (response) {
+                                    if (response.status == 1) {
+                                        art.dialog({
+                                            title: '消息提示',
+                                            content: response.info,
+                                            lock: true
+                                        });
+                                        setInterval(function () {
+                                            location.href = response.url;
+                                        }, 2000);
+                                    } else {
+                                        art.dialog({title: '消息提示', time: 2, content: response.info});
+                                    }
+
+                                }, 'json');
+                            },
+                            cancelVal: '取消',
+                            cancel: true
+                        });
+                    }
+                    
+                    /*
+                     * 功能：执行全部删除操作
+                     * date:2016/06/30 11:29
+                     * @par:ver 1.0 create by huangweiming
+                     * @returns {undefined}
+                     */
+
+                    function delAll() {
+                        var id = [];
+                        var k = 0;
+                        $(".checkitem").each(function (i) {
+                            if ($(this).attr("checked")) {
+                                id[k] = $(this).val();
+                                k++;
+                            }
+                        });
+                        if (!id || id == null || id == '') {
+                            art.dialog({
+                                title: '消息提示',
+                                content: '您还没有勾选要删除的选项!',
+                                lock: true,
+                                time: 2
+                            });
+                            return;
+                        }
+                        var data = {id: id, token: '{pigcms:$token}'};
+                        art.dialog({
+                            title: '消息提示',
+                            content: '确定要删除吗？',
+                            lock: true,
+                            okVal: '确定',
+                            ok: function () {
+                                $.post('index.php?g=Api&m=Merchant&a=del_merchant', data, function (response) {
+                                    if (response.status == 1) {
+                                        art.dialog({
+                                            title: '消息提示',
+                                            content: response.info,
+                                            lock: true
+                                        });
+                                        setInterval(function () {
+                                            location.href = response.url;
+                                        }, 2000);
+                                    } else {
+                                        art.dialog({title: '消息提示', time: 2, content: response.info});
+                                    }
+
+                                }, 'json');
+                            },
+                            cancelVal: '取消',
+                            cancel: true
+                        });
+                    }
+                    /*
+                     * 功能：导出excel
+                     * date:2016/07/06 11:00
+                     * @par:ver 1.0 create by huangweiming
+                     * @returns {undefined}
+                     */
+                    function excel_out() {
+                        var id = [];
+                        var k = 0;
+                        $(".checkitem").each(function (i) {
+                            if ($(this).attr("checked")) {
+                                id[k] = $(this).val();
+                                k++;
+                            }
+                        });
+                        var data = '';
+                        var content = "";
+                        if (!id || id == null || id == '') {
+                            content = "你确定要导出全部数据吗？";
+                        } else {
+                            content = "你确定要导出所选的这些数据吗";
+                            id = id.join(",");
+                            data = "&id=" + id;
+                        }
+                        art.dialog({
+                            title: '消息提示',
+                            content: content,
+                            lock: true,
+                            okVal: '确定',
+                            ok: function () {
+                                var link = "{pigcms::U('Merchant/excel_out')}";
+                                link = link + data;
+                                location.href = link;
+                            },
+                            cancelVal: '取消',
+                            cancel: true
+                        });
+
+                    }
+
+                </script>
+            </div>
+        </div>
+        <div class="footactions" style="padding-left:10px">
+            <div class="pages">{pigcms:$page}</div>
+        </div>
+    </div>
+
+</div>
+
+<include file="Public:footer"/>

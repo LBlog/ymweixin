@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" /> 
+        <title>推客好友</title>
+        <link href="{pigcms::STATICS}/css/base.css" type="text/css" rel="stylesheet"/>
+        <link href="{pigcms::STATICS}/css/common.css" type="text/css" rel="stylesheet"/>
+        <link href="{pigcms::STATICS}/css/css3.css" type="text/css" rel="stylesheet"/>
+        <script type="text/javascript" src="{pigcms::STATICS}/js/jquery.js"></script>
+    </head>
+    <body>
+        <div class="main">
+            <div class="points_top">
+                <div class="p_head radius50 fl">
+                    <img src="{pigcms:$userinfo['portrait']}" width="80" class="radius50"/>
+                </div>
+                <p class="cfff font17">累计推客：{pigcms:$count}人</p>
+            </div>
+            <div class="hei10"></div>
+            <ul class="points_list bgfff">
+                <empty name="twitterinfo">
+                    <p class="texC c999 font14" style="line-height:22px;">暂时没有下级推客</p>
+                    <else/>
+                    <volist name="twitterinfo" id="vo">
+                        <li>
+                            <p class="font15 c333">{pigcms:$vo['wechaname']}</p>
+                            <p class="font13 c999">{pigcms:$vo['bind_time']}</p>
+                            <span class="font14 c666" onclick="lookTwitter('{pigcms:$vo['id']}')">查看下级推客>></span>
+                        </li>
+                    </volist>
+                </empty>
+            </ul>
+        </div>
+        <script>
+            function lookTwitter(id) {
+                window.location.href = "{pigcms::U('Hld/Index/friends', array('token' => $_GET['token']))}&pid=" + id;
+            }
+        </script>
+    </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

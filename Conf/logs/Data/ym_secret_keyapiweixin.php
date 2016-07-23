@@ -1,0 +1,1 @@
+<?php	return array ( 'agentSecret' => 'hld283_454b6c899a86120c23221871eeaf9b73', 'agentKey' => 'd034268a2357732fd2b53ea23d181637', ); ?>

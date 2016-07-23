@@ -1,0 +1,95 @@
+<include file="Public:head"/>
+<script src="{pigcms::STATICS}/jquery.min.js" type="text/javascript"></script>
+<link rel="stylesheet" href="{pigcms::STATICS}/kindeditor/themes/default/default.css" />
+<link rel="stylesheet" href="{pigcms::STATICS}/kindeditor/plugins/code/prettify.css" />
+<script src="{pigcms::STATICS}/kindeditor/kindeditor.js" type="text/javascript"></script>
+<script src="{pigcms::STATICS}/kindeditor/lang/zh_CN.js" type="text/javascript"></script>
+<script src="{pigcms::STATICS}/kindeditor/plugins/code/prettify.js" type="text/javascript"></script>
+<script src="/tpl/static/artDialog/jquery.artDialog.js?skin=default"></script>
+<script src="/tpl/static/artDialog/plugins/iframeTools.js"></script>
+<div class="content">
+    <div class="cLineB"> 
+        <h4>分销积分比例设置</h4> 
+        <a href="javascript:history.go(-1);" class="right btnGrayS vm" style="margin-top:-27px">返回</a>
+    </div>
+    <div style="background:#fefbe4;border:1px solid #f3ecb9;color:#993300;padding:10px;margin-top:5px;">
+        <span>1级：每天推广1人，一个月30天，一个月下来就是30*99元/件=2970*0.38=1128.6元<br/>2级：您的30个客户每天也推广30个人，一个月下来等于推广900人，900*99/件=89100*0.08=7128元<br/>3级：您的二级客户的900人，每天也推广30人，就等于27000个三级会员，27000*99/件=2673000*0.04=106920元<br/>1级+2级+3级就是收入，简单地说也就是，从头到尾只买了98元的产品，然后推广30个人，最后得到几十万的收入!</span>
+    </div>
+
+    <div class="msgWrap bgfc">
+
+        <!--  -->
+        <form method="POST" action="">
+            <table class="userinfoArea" style="margin:0;" border="0"  cellspacing="0" cellpadding="0" width="100%" >
+                <tbody>
+
+                    <tr>
+                        <th width="300">一级推客：</th>
+                        <td>
+                            <input type="text" class="px" name="t1" id="t1" placeholder="请输入正整数" value="{pigcms:$point['0']}" onkeyup='this.value = this.value.replace(/^0|\D/gi, "")' />&nbsp %
+                        </td>
+                    <tr>
+
+                    <tr>
+                        <th width="300">二级推客：</th>
+                        <td>
+                            <input type="text" class="px" name="t2" id="t2" placeholder="请输入正整数" value="{pigcms:$point['1']}" onkeyup='this.value = this.value.replace(/^0|\D/gi, "")' /> &nbsp%
+                        </td>
+                    <tr>
+
+                    <tr>
+                        <th width="300">三级推客：</th>
+                        <td>
+                            <input type="text" class="px" name="t3" id="t3" placeholder="请输入正整数" value="{pigcms:$point['2']}" onkeyup='this.value = this.value.replace(/^0|\D/gi, "")' /> &nbsp%
+                        </td>
+                    <tr>
+
+                    <tr>
+                        <th>&nbsp;</th>
+                        <td><button type="button" class="btnGreen" style="height: 30px;width:100px" id="save" >完成编辑</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+    </div>
+</div>	
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $("#save").click(function () {
+            var t1 = $("#t1").val();
+            var t2 = $("#t2").val();
+            var t3 = $("#t3").val();
+            if (t1 == null || t1 == '') {
+                alert('请填写一级推客所获积分百分比');
+                return;
+            }
+            if (t2 == null || t2 == '') {
+                alert('请填写二级推客所获积分百分比');
+                return;
+            }
+            if (t3 == null || t3 == '') {
+                alert('请填写三级推客所获积分百分比');
+                return;
+            }
+            var data = {t1: t1, t2: t2, t3: t3, token: '{pigcms:$token}', };
+            $.post('index.php?g=HuanleduiAdmin&m=Apipercent&a=edit_percent', data, function (response) {
+                if (response.status == 1) {
+                    art.dialog({
+                        title: '消息提示',
+                        content: response.info,
+                        lock: true,
+                    });
+                    setInterval(function () {
+                        location.href = response.url;
+                    }, 2000);
+                } else {
+                    art.dialog({title: '消息提示', time: 2, content: response.info});
+                }
+
+            }, 'json');
+        })
+    });
+</script>
+<include file="Public:footer"/>

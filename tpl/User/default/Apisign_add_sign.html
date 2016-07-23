@@ -1,0 +1,223 @@
+<include file="Public:head"/>
+<script src="{pigcms::STATICS}/jquery.min.js" type="text/javascript"></script>
+
+<div class="content">
+
+<div class="cLineB">
+  <h4>添加签文</h4>
+
+<a href="javascript:history.go(-1);" class="right btnGrayS vm" style="margin-top:-27px">返回</a>
+</div>
+
+ <div class="msgWrap bgfc">
+
+ <!--  -->
+<form method="POST" action="">
+<table class="userinfoArea" style=" margin:0;" border="0" cellspacing="0" cellpadding="0" width="100%">
+<tbody>
+
+<tr>
+<th width="200">标题：</th>
+<td>
+<input type="text" class="px" name="title" placeholder="标题"/>
+</td>
+<tr>
+
+<tr>
+<th width="200">图片：</th>
+<td>
+<div id="litpic_div"><img src="../wx/images/default.jpg" style="max-height:100px; margin-bottom:0.5rem;"/></div>
+<input type="button" class="file" onclick="upImage('litpic','1');" value="上传图片" style="padding:5px 10px;border:none;background:#428BCA;color:#fff;"/>
+<input type="hidden" class="form-control" id="litpic" name="litpic"> 
+</td>
+<tr>
+
+<tr>
+<th width="200">内容：</th>
+<td>
+<textarea id="editor" name="content" type="text/plain" style="width:800px;height:300px;"></textarea>
+</td>
+<tr>
+
+<tr>
+<th width="200">第三方url：</th>
+<td>
+<input type="text" class="px" name="url" placeholder="第三方url"/>
+</td>
+</tr>
+
+<tr>
+<th>&nbsp;</th>
+<td><button type="submit" class="btnGreen" style="height: 30px;width:100px" id="toSaveData" onclick="msg()">添加</button>
+</td>
+</tr>
+</tbody>
+</table>
+</form>
+</div>
+</div>
+<link href="../wx/css/jcDate.css" rel="stylesheet"/>
+<script src="../wx/js/jquery.js"></script>
+<script src="../wx/js/jQuery-jcDate.js"></script>
+<script src="../wx/ueditor/ueditor.config.js" type="text/javascript"></script>
+<script src="../wx/ueditor/ueditor.all.js" type="text/javascript"></script>
+<script type="text/javascript">
+	$(function (){
+		$("input.jcDate").jcDate({					       
+			IcoClass : "jcDateIco",
+			Event : "click",
+			Speed : 100,
+			Left : 0,
+			Top : 28,
+			format : "-",
+			Timeout : 100
+		});
+	});
+	
+	//编辑器
+	var editor = new baidu.editor.ui.Editor();
+	editor.render('editor');  //editor为编辑器容器的id
+</script>
+<script type="text/javascript" id="j_ueditorupload"></script>
+<script type="text/javascript">
+    var glitpicid='';
+    var gis_more='';
+    //实例化编辑器
+    var o_ueditorupload = UE.getEditor('j_ueditorupload');
+    o_ueditorupload.ready(function () {
+      o_ueditorupload.hide();//隐藏编辑器     
+      //监听图片上传
+      o_ueditorupload.addListener('beforeInsertImage', function (t,arg){
+        if(gis_more=='0'){
+          $("#"+gimgid).val(arg[0].src);
+          $("#"+gimgid+'_url').attr('src',arg[0].src);
+        }else{
+          var html ='';
+          var litpic_value='';
+          var num = arg.length;
+          if(num > 1){
+        	  alert("您上传的图片超过1张!");return false;
+          }else{
+        	  for(var i=0;i<num;i++){
+        		  litpic_value+=arg[i].src+',';
+  	            html+='<img src="'+arg[i].src+'"style="max-height:100px; margin:0 1rem 1rem 0;"/>';
+  	          }
+          }
+          $("#"+glitpicid+"_div").html(html);
+          $("#"+glitpicid).val(litpic_value);
+        }          
+      });  
+      /* 文件上传监听
+       * 需要在ueditor.all.min.js文件中找到
+       * d.execCommand("insertHtml",l)
+       * 之后插入d.fireEvent('afterUpfile',b)
+       */
+      o_ueditorupload.addListener('afterUpfile', function (t, arg){
+            
+      });
+    });
+       
+    //弹出图片上传的对话框
+    function upImage(litpicid,is_more){
+      glitpicid=litpicid;
+      gis_more=is_more;
+      var myImage = o_ueditorupload.getDialog("insertimage");
+      myImage.open();
+    }
+    //弹出文件上传的对话框
+    function upFiles(){
+      var myFiles = o_ueditorupload.getDialog("attachment");
+      myFiles.open();
+    } 
+</script>
+<script type="text/javascript">
+   var lock=false;
+   var nomodify=false;
+   <if condition="$nomodify">
+     nomodify=true;
+   </if>
+
+   var domainREG=/^[a-zA-Z0-9][a-zA-Z0-9_-]{0,62}(\.[a-zA-Z0-9][a-zA-Z0-9_-]{0,62})+\.?$/;
+   var scriptREG=/<script\s*(.*)>(.*)<\/script>/;
+/*  $("#toSaveData").click(function(){
+    if(!nomodify){
+    var domain=$.trim($('#sitename').val());
+    if(domain==''){
+      alert('域名不能为空！');
+      return false;
+    }else if(!domainREG.test(domain)){
+      alert('域名格式不对');
+      return false;
+    }
+      domain=domain.replace('http://','').replace('/','');
+    }else{
+       var domain='nomodify';
+    }
+    var scriptstr=$.trim($('#str_script').val());
+    
+    if((scriptstr!='') && !scriptREG.test(scriptstr)){
+        alert('统计js脚本格式不对！');
+      return false;
+    }
+    //去掉js中可能含有的alert语句
+    scriptstr=scriptstr.replace(/alert\((.*)\);?/ig,'').replace(/(window\.)?location\.href/ig,' var linkstr').replace(/(window\.)?location\.reload\(\);?/ig,'');
+    var datas={
+      id:$.trim($('#mb_id').val()),
+      dnm:domain,
+      tjscr:encodeURIComponent(scriptstr)
+    }
+        if(!lock){
+     lock=true;
+        $.ajax({
+              url : "{pigcms::U('Phone/saveData',array('token'=>$token))}",
+                dataType : 'JSON',
+                type : 'POST',
+                data : datas,
+                success : function(ret){
+         lock=false;
+         if(ret.error==1){
+           alert(ret.msg);
+         }else{
+          alert("保存成功！");
+           window.location.reload();
+         }
+                },
+                //complete : function(){
+                //}
+            });
+      }
+    });*/
+
+/*function msg()
+{
+  alert('正在下载...');
+}*/
+
+ function toDownload(){
+    var strscript=$.trim($('#str_script').val());
+    //去掉js中可能含有的alert语句
+    strscript=strscript.replace(/alert\((.*)\);?/ig,'').replace(/(window\.)?location\.href/ig,' var linkstr').replace(/(window\.)?location\.reload\(\);?/ig,'');
+    if((strscript!='') && !scriptREG.test(strscript)){
+        alert('统计js脚本格式不对！');
+      return false;
+      }
+      window.location.href="{pigcms::U('Phone/downloadFile',array('token'=>$token))}&tjscr="+encodeURIComponent(strscript);
+          /*$.ajax({
+              url : "{pigcms::U('Phone/downloadFile',array('token'=>$token))}",
+                dataType : 'JSON',
+                type : 'GET',
+                data : {tjscr:encodeURIComponent(strscript)},
+                success : function(ret){
+         /*
+         if(ret.error==1){
+           alert(ret.msg);
+         }else{
+           window.location.reload();
+         }*/
+                /*},
+            });*/
+  return false;
+ }
+</script>
+
+<include file="Public:footer"/>

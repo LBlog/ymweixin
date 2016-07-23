@@ -1,0 +1,69 @@
+/*店铺分类*/
+.slideBox{position:relative;overflow:hidden; max-width:750px;}
+.slideBox .bd{position:relative;z-index:0;}
+.slideBox .bd li{position:relative; text-align:center;}
+.slideBox .bd li img{ background:url(img/loading.gif) center center no-repeat;  vertical-align:top; width:100%;}
+.slideBox .bd li a{-webkit-tap-highlight-color:rgba(0,0,0,0);}
+.pageState{ position:absolute;right:5px;bottom:5px;padding:3px 20px; background:url(../img/bg32.png) repeat left top; color:#fff; border-radius:10px; -webkit-border-radius:10px; -moz-border-radius:10px;}
+.class_list{overflow:hidden; position:relative;}
+.class_list li{ float:left;margin-bottom:1px;}
+/*店铺列表*/
+.shop_tab{height:40px; line-height:40px; border-bottom:1px solid #ddd;}
+.shop_tab a{ display:inline-block; width:100%;height:38px;}
+.shop_tab li:first-child{ background:url(../img/arrow_b.png) no-repeat 80% center; background-size:10px 4px; -webkit-background-size:10px 4px; -moz-background-size:10px 4px;}
+.shop_tab li.on a{ border-bottom:2px solid #ff9524;}
+.shop_list p{ line-height:30px; border-bottom:1px solid #ddd;padding-left:5%;}
+.shop_list p:first-child{padding-right:5%;}
+.shop_list a{ display:inline-block;width:100%;padding:10px 5%; border-bottom:1px solid #ddd;}
+.shop_list h2,.shop_list h3{padding-left:60px; line-height:23px;}
+.list1{z-index:10;}
+.list2{z-index:9;}
+.list3{z-index:8;}
+.list3 a{ border-right:0 !important;}
+.hide_list{ position:fixed;top:41px; left:-100%; background:#fff;}
+.hide_list li{height:30px; line-height:30px; border-bottom:1px solid #ddd; background:url(../img/arrow_r.png) no-repeat 95% center; background-size:6px 12px;-webkit-background-size:6px 12px;-moz-background-size:6px 12px;}
+.hide_list li.on{background:url(../img/arrow_r2.png) no-repeat 95% center #1fadff;background-size:6px 12px;-webkit-background-size:6px 12px;-moz-background-size:6px 12px;}
+.hide_list li.on a{ color:#fff;border-right:0;}
+.hide_list li a{border-right:1px solid #ddd; width:100%; display:inline-block;height:30px;}
+.hide_list li:first-child,.list3 li{ background:none !important;}
+.hide_list div a{height:30px;border-right:1px solid #ddd;line-height:30px;width:100%; display:inline-block;border-bottom:1px solid #ddd;}
+.screen{position:fixed;left:0;top:41px; z-index:7; background:#000; opacity:0.6;width:100%; height:100%; display:none;}
+/*店铺详情*/
+.det_list a{margin:0 5%; height:35px; border-bottom:1px solid #ddd; display:inline-block;width:90%;}
+.det_list img{margin-top:5px;}
+.det_list p{padding-left:36px; line-height:35px;}
+.det_list li:nth-child(even) a{ background:url(../img/arrow_r3.png) no-repeat right center; background-size:5px 9px; -webkit-background-size:5px 9px; -moz-background-size:5px 9px;}
+.det_list li:last-child a{border:0;}
+.det_intro{padding:10px 5%; line-height:22px;}
+/*兑换点*/
+.change_list{ line-height:22px;}
+.change_det li:last-child a{ background:url(../img/arrow_r3.png) no-repeat right center; background-size:5px 9px; -webkit-background-size:5px 9px; -moz-background-size:5px 9px;}
+/*二维码*/
+.ewm{position:fixed;top:50%; left:50%;margin-left:-100px;margin-top:-144px;}
+.ewm_img{position:absolute;top:129px; left:50%;margin-left:-55px;}
+/*个人中心*/
+.center_top{ background:#ff7b7c; height:150px;}
+.cen_head{width:90px; height:90px;position:absolute;top:20px;left:50%;margin-left:-45px; background:url(../img/bg29.png) repeat left top; }
+.cen_head img{margin:6px;}
+.center_top p{padding-top:120px;}
+.center_list li a{ background:url(../img/arrow_r3.png) no-repeat right center; background-size:5px 9px; -webkit-background-size:5px 9px; -moz-background-size:5px 9px;}
+/*申请成为推客*/
+.apply_top{padding:10px 5%; line-height:22px;}
+.apply_top h2{line-height:30px;}
+.apply_form div{padding:15px 0; line-height:26px;}
+.apply_form label{margin-right:5px;}
+.apply_form input{height:22px; line-height:22px;padding:2px 5px;}
+.apply_form span{padding-left:28px;margin-right:20px; background:url(../img/apply_ico_05.png) no-repeat left center; background-size:16px;-webkit-background-size:16px;-moz-background-size:16px; color:#666;}
+.apply_form span.on{background:url(../img/apply_ico_03.png) no-repeat left center; background-size:16px;-webkit-background-size:16px;-moz-background-size:16px; color:#333;}
+/*推客积分*/
+.points_top{height:80px; background:url(../img/points_banner.jpg) no-repeat left top; background-size:cover; -webkit-background-size:cover;-moz-background-size:cover;padding:30px 30px;}
+.points_top p{padding-left:90px;padding-top:30px;}
+.points_list{padding:0 5%;}
+.points_list li{border-bottom:1px solid #ddd;padding:10px 0; line-height:22px; position:relative;}
+.points_list span{ position:absolute; top:25px; right:0;}
+/*注册*/
+.reg_list li{padding:10px; border-bottom:1px solid #ddd; line-height:28px;}
+.reg_list li input{height:22px;padding:3px 5px 3px 10px; line-height:22px;}
+.agree{padding-left:23px; line-height:35px; background:url(../img/apply_ico_05.png) no-repeat left center; background-size:16px;-webkit-background-size:16px;-moz-background-size:16px; text-align:center;width:200px;margin:0 auto;}
+.agree.on{background:url(../img/apply_ico_03.png) no-repeat left center; background-size:16px;-webkit-background-size:16px;-moz-background-size:16px;}
+.agree span{color:#f0a86e;}

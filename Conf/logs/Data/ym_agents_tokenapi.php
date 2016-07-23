@@ -1,0 +1,1 @@
+<?php	return array ( 'token' => '2d645ef8c2025499b6dd77596d7', ); ?>

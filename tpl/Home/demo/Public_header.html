@@ -1,0 +1,33 @@
+<link href="{pigcms::RES}/css/public.css" rel="stylesheet" type="text/css" />
+<link href="{pigcms::RES}/css/index2.css" rel="stylesheet" type="text/css" />
+<!--<script src="{pigcms::RES}/js/jquery-1.9.1.min.js" type="text/javascript"></script>-->
+<script src="{pigcms::RES}/js/jquery1.js" type="text/javascript"></script>
+<script src="{pigcms::RES}/js/daohang.js" type="text/javascript"></script>
+
+<script src="{pigcms::RES}/js/jquery-1.7.2.min.js"></script>
+<script src="{pigcms::RES}/js/ss.js"></script>
+<link href="{pigcms::RES}/css/gongneng.css" rel="stylesheet" type="text/css" />
+<script src="{pigcms::RES}/js/gongnneg.js" type="text/javascript"></script>
+<link href="{pigcms::RES}/css/gongneng.css" rel="stylesheet" type="text/css" />
+<link href="{pigcms::RES}/css/help.css" rel="stylesheet" type="text/css" />
+<link href="{pigcms::RES}/css/zifei.css" rel="stylesheet" type="text/css" />
+<link href="{pigcms::RES}/css/case.css" rel="stylesheet" type="text/css" />
+<link href="{pigcms::RES}/css/about us.css" rel="stylesheet" type="text/css" />
+<!--startof header-->
+<div class="header clr">
+    <div class="biaotilan clr">
+        <div class="shang clr">
+            <div class="zhongJian clr">
+                <div class="zLeft clr">欢迎使用{pigcms:$f_siteName}移动互联网会员管理与营销系统!</div>
+                <div class="zRight clr">
+                    <if condition="$_SESSION[uid]==false">
+                        <span class="ones clr"><a href="{pigcms::U('Index/login')}">注册</a></span>
+                        <span class="twos clr"><a href="{pigcms::U('Index/login')}">登录</a></span>
+                        <else/>
+                        你好,<a href="/#" hidefocus="true"  ><span style="color:red">{pigcms:$Think.session.uname}</span></a>（uid:{pigcms:$Think.session.uid}）
+                        <a href="/#" onclick="Javascript:window.open('{pigcms::U('System / Admin / logout')}', '_blank')" >退出</a>
+                    </if>   
+                </div>
+            </div>
+        </div>
+    </div>

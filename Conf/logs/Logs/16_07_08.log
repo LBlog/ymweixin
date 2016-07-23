@@ -1,0 +1,51 @@
+[ 2016-07-08T13:11:53+08:00 ] ERR: (ThinkException) 模板不存在[./tpl/User/default/Merchant_setext.html]
+[ 2016-07-08T13:20:45+08:00 ] 218.75.69.250 /index.php?g=Api&m=Img&a=del_img&img=/public_source/www/upload/image/20160706/1467793085119025.jpg&id=4&model=ahld_mall&token=plvmhl1467344437
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000336s ]
+NOTIC: [2] unlink(/home/project/pig/public_source/www/upload/image/20160706/1467793085119025.jpg): No such file or directory /home/project/pig/PigCms/Lib/Action/Api/ImgAction.class.php 第 30 行.
+
+[ 2016-07-08T13:21:00+08:00 ] 218.75.69.250 /index.php?g=Api&m=Img&a=imgs_del&token=plvmhl1467344437
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000291s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000340s ]
+
+[ 2016-07-08T13:21:03+08:00 ] 218.75.69.250 /index.php?g=Api&m=Img&a=del_img&img=/public_source/www/upload/image/20160706/1467793085119025.jpg&id=4&model=ahld_mall&token=plvmhl1467344437
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000447s ]
+NOTIC: [2] unlink(/home/project/pig/public_source/www/upload/image/20160706/1467793085119025.jpg): No such file or directory /home/project/pig/PigCms/Lib/Action/Api/ImgAction.class.php 第 30 行.
+
+[ 2016-07-08T13:21:55+08:00 ] 218.75.69.250 /index.php?g=Api&m=Img&a=del_img&img=/public_source/www/upload/image/20160706/1467793085119025.jpg&id=4&model=ahld_mall&token=plvmhl1467344437
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000289s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000395s ]
+NOTIC: [2] unlink(/home/project/pig/public_source/www/upload/image/20160706/1467793085119025.jpg): No such file or directory /home/project/pig/PigCms/Lib/Action/Api/ImgAction.class.php 第 30 行.
+
+[ 2016-07-08T13:21:58+08:00 ] 218.75.69.250 /index.php?g=Api&m=Img&a=del_img&img=/public_source/www/upload/image/20160706/1467793085126332.jpg&id=4&model=ahld_mall&token=plvmhl1467344437
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000318s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000366s ]
+NOTIC: [2] unlink(/home/project/pig/public_source/www/upload/image/20160706/1467793085126332.jpg): No such file or directory /home/project/pig/PigCms/Lib/Action/Api/ImgAction.class.php 第 30 行.
+
+[ 2016-07-08T15:16:02+08:00 ] ERR: (ThinkException) 非法操作:save_banner
+[ 2016-07-08T15:22:16+08:00 ] ERR: (ThinkException) 非法操作:save_banner
+[ 2016-07-08T15:24:41+08:00 ] ERR: (ThinkException) 非法操作:save_banner
+[ 2016-07-08T15:27:33+08:00 ] ERR: (ThinkException) 非法操作:save_banner
+[ 2016-07-08T15:27:44+08:00 ] ERR: (ThinkException) 非法操作:save_banner
+[ 2016-07-08T15:28:12+08:00 ] ERR: (ThinkException) 非法操作:save_banner
+[ 2016-07-08T15:47:34+08:00 ] 218.75.69.250 /index.php?g=Api&m=Img&a=del_img&img=/public_source/www/upload/image/20160704/1467614200698016.jpg&id=4&model=ahld_conf&token=plvmhl1467344437
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000279s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000339s ]
+SQL: SHOW COLUMNS FROM `tp_ahld_conf` [ RunTime:0.000411s ]
+SQL: SELECT `img` FROM `tp_ahld_conf` WHERE ( `id` = 4 ) LIMIT 1   [ RunTime:0.000100s ]
+DEBUG: ERR:Unknown column 'img' in 'field list'
+ [ SQL语句 ] : SELECT `img` FROM `tp_ahld_conf` WHERE ( `id` = 4 ) LIMIT 1  
+
+[ 2016-07-08T15:51:49+08:00 ] 218.75.69.250 /index.php?g=Api&m=Img&a=imgs_del&token=plvmhl1467344437
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000293s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000339s ]
+
+[ 2016-07-08T15:56:47+08:00 ] ERR: (ThinkException) 模板不存在[./tpl/User/default/Merchant_setext.html]

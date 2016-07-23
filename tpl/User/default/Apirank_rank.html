@@ -1,0 +1,90 @@
+<include file="Public:head"/>  
+<script src="/tpl/static/artDialog/jquery.artDialog.js?skin=default"></script>
+<script src="/tpl/static/artDialog/plugins/iframeTools.js"></script>
+<script src="{pigcms::RES}/js/cart/jscolor.js" type="text/javascript"></script>
+<div class="content">
+<div class="cLineB">
+<div class="cLineB">
+  <h4>等级列表</h4>
+</div>
+<div class="clr"></div>
+<ul id="tags">
+  <li><a href="{pigcms::U('Apirank/add',array('token'=>$token))}">添加等级</a> </li>
+</ul>
+<div class="clr"></div>
+</div>
+<div class="cLine">
+<!-- <form method="post"  action="" id="info" >
+关键词：
+<input type="text" class="px" name="search" value="{pigcms:$search}" style="height:25px;width:150px;" placeholder="请输入活动名称">
+<input type="submit" class="btnGrayS" value="搜索">
+</form>
+<div class="clr"></div> -->
+</div>
+<div class="msgWrap">
+<form method="post"  action="" id="info" >
+<input type="hidden" name="token" value="{pigcms:$token}" id="mb_id">
+<TABLE class="ListProduct" border="0" cellSpacing="0" cellPadding="0" width="100%">
+<THEAD>
+<tr>
+<th width="120" style="text-align:center">编号</th>
+<th width="120" style="text-align:center">等级名称</th>
+<th width="120" style="text-align:center">等级积分</th>
+<th width="100" style="text-align:center">操作</th>
+</tr>
+</THEAD>
+<TBODY>
+<TR></TR>
+<volist id="item" name="rank">
+<TR>
+<TD style="text-align:center">{pigcms:$item.id}</TD>
+<TD style="text-align:center">{pigcms:$item.rankname}</TD>
+<TD style="text-align:center">{pigcms:$item.intergal}</TD>
+<TD style="text-align:center"> <a href=<?php U('Apirank/edit');?>"?g=User&m=Apirank&a=edit&id={pigcms:$item.id}">编辑</a>
+<a href="javascript:void(0)" onclick="del(this,{pigcms:$item.id})">删除</a></TD>
+</TR>
+</volist>
+</TBODY>
+</TABLE>
+</form>
+
+</div>
+<div class="cLine">
+<div class="pageNavigator right">
+<div class="pages">{pigcms:$page}</div>
+</div>
+<div class="clr"></div>
+</div>
+</div>  
+        <div class="clr"></div>
+    <include file="Public:footer"/>
+      </div>
+    </div>
+  </div> 
+ 
+<script>
+function del(obj,id)
+{ 
+  if(confirm("确定删除这个记录？"))
+    {
+        var data = {"id":id};
+        var parent = $(obj).parent().parent();
+        $.ajax({
+        type:"post",
+        url:<?php U('Apirank/ajaxrank');?>"?g=User&m=Apirank&a=ajaxrank&token={pigcms:$token}&id={pigcms:$item.id}",
+       // dataType:"json",
+        data:data,
+        success:function(msg)
+        {
+            console.log(msg);
+            if(msg==1)
+            {
+                parent.remove();
+                alert('该记录已删除');
+            }
+        }
+    })
+    }
+   
+}
+</script>

@@ -1,0 +1,659 @@
+[ 2016-07-05T09:01:38+08:00 ] 127.0.0.1 /index.php?g=Api&m=Img&a=del_img&img=/public_source/www/upload/image/20160705/1467679542186757.png&id=7&model=ahld_mall&token=tcpbjz1466048616
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\xampp\htdocs\huanledui\trunk\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `tp_ahld_mall` [ RunTime:0.009000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\xampp\htdocs\huanledui\trunk\Lib\Core\Db.class.php 第 572 行.
+SQL: SELECT `img` FROM `tp_ahld_mall` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.011001s ]
+SQL: UPDATE `tp_ahld_mall` SET `img`='/public_source/www/upload/image/20160705/1467679542135756.jpg,/public_source/www/upload/image/20160705/1467679542124835.jpg,/public_source/www/upload/image/20160705/1467679542136625.jpg,/public_source/www/upload/image/20160705/1467679542640054.jpg,/public_source/www/upload/image/20160705/1467679542166963.png,' WHERE ( `id` = 7 ) [ RunTime:0.009001s ]
+
+[ 2016-07-05T09:02:07+08:00 ] 127.0.0.1 /index.php?g=Api&m=Img&a=del_img&img=/public_source/www/upload/image/20160705/1467679542136625.jpg&id=7&model=ahld_mall&token=tcpbjz1466048616
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\xampp\htdocs\huanledui\trunk\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `tp_ahld_mall` [ RunTime:0.008000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\xampp\htdocs\huanledui\trunk\Lib\Core\Db.class.php 第 572 行.
+SQL: SELECT `img` FROM `tp_ahld_mall` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.018001s ]
+SQL: UPDATE `tp_ahld_mall` SET `img`='/public_source/www/upload/image/20160705/1467679542135756.jpg,/public_source/www/upload/image/20160705/1467679542124835.jpg,/public_source/www/upload/image/20160705/1467679542640054.jpg,/public_source/www/upload/image/20160705/1467679542166963.png,' WHERE ( `id` = 7 ) [ RunTime:0.009001s ]
+
+[ 2016-07-05T09:02:42+08:00 ] 127.0.0.1 /index.php?g=Api&m=Img&a=del_img&img=/public_source/www/upload/image/20160705/1467680549300189.png&id=7&model=ahld_mall&token=tcpbjz1466048616
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\xampp\htdocs\huanledui\trunk\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `tp_ahld_mall` [ RunTime:0.000000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\xampp\htdocs\huanledui\trunk\Lib\Core\Db.class.php 第 572 行.
+SQL: SELECT `img` FROM `tp_ahld_mall` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.015600s ]
+SQL: UPDATE `tp_ahld_mall` SET `img`='/public_source/www/upload/image/20160705/1467679542135756.jpg,/public_source/www/upload/image/20160705/1467679542124835.jpg,/public_source/www/upload/image/20160705/1467679542640054.jpg,/public_source/www/upload/image/20160705/1467679542166963.png,' WHERE ( `id` = 7 ) [ RunTime:0.000000s ]
+
+[ 2016-07-05T09:02:45+08:00 ] 127.0.0.1 /index.php?g=Api&m=Img&a=del_img&img=/public_source/www/upload/image/20160705/1467680549126074.png&id=7&model=ahld_mall&token=tcpbjz1466048616
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\xampp\htdocs\huanledui\trunk\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `tp_ahld_mall` [ RunTime:0.000000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\xampp\htdocs\huanledui\trunk\Lib\Core\Db.class.php 第 572 行.
+SQL: SELECT `img` FROM `tp_ahld_mall` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.015600s ]
+SQL: UPDATE `tp_ahld_mall` SET `img`='/public_source/www/upload/image/20160705/1467679542135756.jpg,/public_source/www/upload/image/20160705/1467679542124835.jpg,/public_source/www/upload/image/20160705/1467679542640054.jpg,/public_source/www/upload/image/20160705/1467679542166963.png,' WHERE ( `id` = 7 ) [ RunTime:0.015600s ]
+
+[ 2016-07-05T09:02:52+08:00 ] 127.0.0.1 /index.php?g=Api&m=Img&a=del_img&img=/public_source/www/upload/image/20160705/1467680549129801.jpg&id=7&model=ahld_mall&token=tcpbjz1466048616
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\xampp\htdocs\huanledui\trunk\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `tp_ahld_mall` [ RunTime:0.015600s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\xampp\htdocs\huanledui\trunk\Lib\Core\Db.class.php 第 572 行.
+SQL: SELECT `img` FROM `tp_ahld_mall` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.015600s ]
+SQL: UPDATE `tp_ahld_mall` SET `img`='/public_source/www/upload/image/20160705/1467679542135756.jpg,/public_source/www/upload/image/20160705/1467679542124835.jpg,/public_source/www/upload/image/20160705/1467679542640054.jpg,/public_source/www/upload/image/20160705/1467679542166963.png,' WHERE ( `id` = 7 ) [ RunTime:0.000000s ]
+
+[ 2016-07-05T09:02:55+08:00 ] 127.0.0.1 /index.php?g=Api&m=Img&a=del_img&img=/public_source/www/upload/image/20160705/1467680549103439.jpg&id=7&model=ahld_mall&token=tcpbjz1466048616
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\xampp\htdocs\huanledui\trunk\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `tp_ahld_mall` [ RunTime:0.015600s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\xampp\htdocs\huanledui\trunk\Lib\Core\Db.class.php 第 572 行.
+SQL: SELECT `img` FROM `tp_ahld_mall` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: UPDATE `tp_ahld_mall` SET `img`='/public_source/www/upload/image/20160705/1467679542135756.jpg,/public_source/www/upload/image/20160705/1467679542124835.jpg,/public_source/www/upload/image/20160705/1467679542640054.jpg,/public_source/www/upload/image/20160705/1467679542166963.png,' WHERE ( `id` = 7 ) [ RunTime:0.015600s ]
+
+[ 2016-07-05T09:08:40+08:00 ] 127.0.0.1 /index.php?g=Api&m=Img&a=imgs_del&token=tcpbjz1466048616
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-05T09:09:31+08:00 ] 127.0.0.1 /index.php?g=Api&m=Img&a=del_img&img=/public_source/www/upload/image/20160705/1467680950343049.jpg&id=7&model=ahld_mall&token=tcpbjz1466048616
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\xampp\htdocs\huanledui\trunk\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `tp_ahld_mall` [ RunTime:0.000000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\xampp\htdocs\huanledui\trunk\Lib\Core\Db.class.php 第 572 行.
+SQL: SELECT `img` FROM `tp_ahld_mall` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: UPDATE `tp_ahld_mall` SET `img`='/public_source/www/upload/image/20160705/1467679542135756.jpg,/public_source/www/upload/image/20160705/1467679542124835.jpg,/public_source/www/upload/image/20160705/1467679542640054.jpg,/public_source/www/upload/image/20160705/1467679542166963.png,' WHERE ( `id` = 7 ) [ RunTime:0.015600s ]
+
+[ 2016-07-05T09:09:35+08:00 ] 127.0.0.1 /index.php?g=Api&m=Img&a=del_img&img=/public_source/www/upload/image/20160705/1467680950478513.jpg&id=7&model=ahld_mall&token=tcpbjz1466048616
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\xampp\htdocs\huanledui\trunk\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `tp_ahld_mall` [ RunTime:0.000000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\xampp\htdocs\huanledui\trunk\Lib\Core\Db.class.php 第 572 行.
+SQL: SELECT `img` FROM `tp_ahld_mall` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.015600s ]
+SQL: UPDATE `tp_ahld_mall` SET `img`='/public_source/www/upload/image/20160705/1467679542135756.jpg,/public_source/www/upload/image/20160705/1467679542124835.jpg,/public_source/www/upload/image/20160705/1467679542640054.jpg,/public_source/www/upload/image/20160705/1467679542166963.png,' WHERE ( `id` = 7 ) [ RunTime:0.000000s ]
+
+[ 2016-07-05T09:09:37+08:00 ] 127.0.0.1 /index.php?g=Api&m=Img&a=del_img&img=/public_source/www/upload/image/20160705/1467680950592160.jpg&id=7&model=ahld_mall&token=tcpbjz1466048616
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\xampp\htdocs\huanledui\trunk\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `tp_ahld_mall` [ RunTime:0.017600s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\xampp\htdocs\huanledui\trunk\Lib\Core\Db.class.php 第 572 行.
+SQL: SELECT `img` FROM `tp_ahld_mall` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.009000s ]
+SQL: UPDATE `tp_ahld_mall` SET `img`='/public_source/www/upload/image/20160705/1467679542135756.jpg,/public_source/www/upload/image/20160705/1467679542124835.jpg,/public_source/www/upload/image/20160705/1467679542640054.jpg,/public_source/www/upload/image/20160705/1467679542166963.png,' WHERE ( `id` = 7 ) [ RunTime:0.008001s ]
+
+[ 2016-07-05T09:09:39+08:00 ] 127.0.0.1 /index.php?g=Api&m=Img&a=del_img&img=/public_source/www/upload/image/20160705/1467680950865713.jpg&id=7&model=ahld_mall&token=tcpbjz1466048616
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\xampp\htdocs\huanledui\trunk\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `tp_ahld_mall` [ RunTime:0.010001s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\xampp\htdocs\huanledui\trunk\Lib\Core\Db.class.php 第 572 行.
+SQL: SELECT `img` FROM `tp_ahld_mall` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.009001s ]
+SQL: UPDATE `tp_ahld_mall` SET `img`='/public_source/www/upload/image/20160705/1467679542135756.jpg,/public_source/www/upload/image/20160705/1467679542124835.jpg,/public_source/www/upload/image/20160705/1467679542640054.jpg,/public_source/www/upload/image/20160705/1467679542166963.png,' WHERE ( `id` = 7 ) [ RunTime:0.003000s ]
+
+[ 2016-07-05T09:09:43+08:00 ] 127.0.0.1 /index.php?g=Api&m=Img&a=del_img&img=/public_source/www/upload/image/20160705/1467680950139676.jpg&id=7&model=ahld_mall&token=tcpbjz1466048616
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\xampp\htdocs\huanledui\trunk\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `tp_ahld_mall` [ RunTime:0.015600s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\xampp\htdocs\huanledui\trunk\Lib\Core\Db.class.php 第 572 行.
+SQL: SELECT `img` FROM `tp_ahld_mall` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.015600s ]
+SQL: UPDATE `tp_ahld_mall` SET `img`='/public_source/www/upload/image/20160705/1467679542135756.jpg,/public_source/www/upload/image/20160705/1467679542124835.jpg,/public_source/www/upload/image/20160705/1467679542640054.jpg,/public_source/www/upload/image/20160705/1467679542166963.png,' WHERE ( `id` = 7 ) [ RunTime:0.015600s ]
+
+[ 2016-07-05T09:09:45+08:00 ] 127.0.0.1 /index.php?g=Api&m=Img&a=del_img&img=/public_source/www/upload/image/20160705/1467680950126367.jpg&id=7&model=ahld_mall&token=tcpbjz1466048616
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\xampp\htdocs\huanledui\trunk\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `tp_ahld_mall` [ RunTime:0.015600s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\xampp\htdocs\huanledui\trunk\Lib\Core\Db.class.php 第 572 行.
+SQL: SELECT `img` FROM `tp_ahld_mall` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: UPDATE `tp_ahld_mall` SET `img`='/public_source/www/upload/image/20160705/1467679542135756.jpg,/public_source/www/upload/image/20160705/1467679542124835.jpg,/public_source/www/upload/image/20160705/1467679542640054.jpg,/public_source/www/upload/image/20160705/1467679542166963.png,' WHERE ( `id` = 7 ) [ RunTime:0.015600s ]
+
+[ 2016-07-05T09:11:09+08:00 ] 127.0.0.1 /index.php?g=Api&m=Img&a=imgs_del&token=tcpbjz1466048616
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-05T09:12:57+08:00 ] 127.0.0.1 /index.php?g=Api&m=Img&a=imgs_del&token=tcpbjz1466048616
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-05T09:15:33+08:00 ] 127.0.0.1 /index.php?g=Api&m=Img&a=imgs_del&token=tcpbjz1466048616
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-05T09:16:03+08:00 ] 127.0.0.1 /index.php?g=Api&m=Img&a=del_img&img=/public_source/www/upload/image/20160705/1467681354269120.jpg&id=1&model=ahld_mall&token=tcpbjz1466048616
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\xampp\htdocs\huanledui\trunk\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `tp_ahld_mall` [ RunTime:0.015600s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\xampp\htdocs\huanledui\trunk\Lib\Core\Db.class.php 第 572 行.
+SQL: SELECT `img` FROM `tp_ahld_mall` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2016-07-05T09:16:08+08:00 ] 127.0.0.1 /index.php?g=Api&m=Img&a=del_img&img=/public_source/www/upload/image/20160705/1467681354930174.jpg&id=1&model=ahld_mall&token=tcpbjz1466048616
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\xampp\htdocs\huanledui\trunk\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `tp_ahld_mall` [ RunTime:0.000000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\xampp\htdocs\huanledui\trunk\Lib\Core\Db.class.php 第 572 行.
+SQL: SELECT `img` FROM `tp_ahld_mall` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.018600s ]
+
+[ 2016-07-05T09:17:16+08:00 ] 127.0.0.1 /index.php?g=Api&m=Img&a=del_img&img=/public_source/www/upload/image/20160704/1467630142149234.jpg&id=6&model=ahld_mall&token=tcpbjz1466048616
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] unlink(E:\xampp\htdocs\huanledui\trunk/public_source/www/upload/image/20160704/1467630142149234.jpg): No such file or directory E:\xampp\htdocs\huanledui\trunk\PigCms\Lib\Action\Api\ImgAction.class.php 第 30 行.
+
+[ 2016-07-05T09:18:19+08:00 ] 127.0.0.1 /index.php?g=Api&m=Img&a=del_img&img=/public_source/www/upload/image/20160705/1467679542166963.png&id=7&model=ahld_mall&token=tcpbjz1466048616
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\xampp\htdocs\huanledui\trunk\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `tp_ahld_mall` [ RunTime:0.010001s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\xampp\htdocs\huanledui\trunk\Lib\Core\Db.class.php 第 572 行.
+SQL: SELECT `img` FROM `tp_ahld_mall` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.009000s ]
+SQL: UPDATE `tp_ahld_mall` SET `img`='/public_source/www/upload/image/20160705/1467679542135756.jpg,/public_source/www/upload/image/20160705/1467679542124835.jpg,/public_source/www/upload/image/20160705/1467679542640054.jpg,' WHERE ( `id` = 7 ) [ RunTime:0.009001s ]
+
+[ 2016-07-05T09:18:21+08:00 ] 127.0.0.1 /index.php?g=Api&m=Img&a=del_img&img=/public_source/www/upload/image/20160705/1467679542640054.jpg&id=7&model=ahld_mall&token=tcpbjz1466048616
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.015600s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015600s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\xampp\htdocs\huanledui\trunk\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `tp_ahld_mall` [ RunTime:0.015600s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\xampp\htdocs\huanledui\trunk\Lib\Core\Db.class.php 第 572 行.
+SQL: SELECT `img` FROM `tp_ahld_mall` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.016600s ]
+SQL: UPDATE `tp_ahld_mall` SET `img`='/public_source/www/upload/image/20160705/1467679542135756.jpg,/public_source/www/upload/image/20160705/1467679542124835.jpg,' WHERE ( `id` = 7 ) [ RunTime:0.020002s ]
+
+[ 2016-07-05T09:18:21+08:00 ] 127.0.0.1 /index.php?g=Api&m=Img&a=del_img&img=/public_source/www/upload/image/20160705/1467679542124835.jpg&id=7&model=ahld_mall&token=tcpbjz1466048616
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\xampp\htdocs\huanledui\trunk\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `tp_ahld_mall` [ RunTime:0.015600s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\xampp\htdocs\huanledui\trunk\Lib\Core\Db.class.php 第 572 行.
+SQL: SELECT `img` FROM `tp_ahld_mall` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: UPDATE `tp_ahld_mall` SET `img`='/public_source/www/upload/image/20160705/1467679542135756.jpg,' WHERE ( `id` = 7 ) [ RunTime:0.015600s ]
+
+[ 2016-07-05T09:18:22+08:00 ] 127.0.0.1 /index.php?g=Api&m=Img&a=del_img&img=/public_source/www/upload/image/20160705/1467679542135756.jpg&id=7&model=ahld_mall&token=tcpbjz1466048616
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\xampp\htdocs\huanledui\trunk\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `tp_ahld_mall` [ RunTime:0.021600s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\xampp\htdocs\huanledui\trunk\Lib\Core\Db.class.php 第 572 行.
+SQL: SELECT `img` FROM `tp_ahld_mall` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.018001s ]
+SQL: UPDATE `tp_ahld_mall` SET `img`='' WHERE ( `id` = 7 ) [ RunTime:0.013000s ]
+
+[ 2016-07-05T09:18:38+08:00 ] 127.0.0.1 /index.php?g=Api&m=Img&a=del_img&img=/public_source/www/upload/image/20160704/1467630142185811.jpg&id=6&model=ahld_mall&token=tcpbjz1466048616
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\xampp\htdocs\huanledui\trunk\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `tp_ahld_mall` [ RunTime:0.009001s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\xampp\htdocs\huanledui\trunk\Lib\Core\Db.class.php 第 572 行.
+SQL: SELECT `img` FROM `tp_ahld_mall` WHERE ( `id` = 6 ) LIMIT 1   [ RunTime:0.008000s ]
+SQL: UPDATE `tp_ahld_mall` SET `img`='/public_source/www/upload/image/20160702/1467429166730292.jpg,/public_source/www/upload/image/20160704/1467630142149234.jpg,/public_source/www/upload/image/20160704/1467630142444561.png,/public_source/www/upload/image/20160704/1467630142264731.png,/public_source/www/upload/image/20160704/1467630142724569.png,/public_source/www/upload/image/20160704/1467630142492455.png,' WHERE ( `id` = 6 ) [ RunTime:0.003001s ]
+
+[ 2016-07-05T09:18:39+08:00 ] 127.0.0.1 /index.php?g=Api&m=Img&a=del_img&img=/public_source/www/upload/image/20160702/1467429166730292.jpg&id=6&model=ahld_mall&token=tcpbjz1466048616
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\xampp\htdocs\huanledui\trunk\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `tp_ahld_mall` [ RunTime:0.020600s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\xampp\htdocs\huanledui\trunk\Lib\Core\Db.class.php 第 572 行.
+SQL: SELECT `img` FROM `tp_ahld_mall` WHERE ( `id` = 6 ) LIMIT 1   [ RunTime:0.009001s ]
+SQL: UPDATE `tp_ahld_mall` SET `img`='/public_source/www/upload/image/20160704/1467630142149234.jpg,/public_source/www/upload/image/20160704/1467630142444561.png,/public_source/www/upload/image/20160704/1467630142264731.png,/public_source/www/upload/image/20160704/1467630142724569.png,/public_source/www/upload/image/20160704/1467630142492455.png,' WHERE ( `id` = 6 ) [ RunTime:0.011000s ]
+
+[ 2016-07-05T09:19:14+08:00 ] 127.0.0.1 /index.php?g=Api&m=Img&a=del_img&img=/public_source/www/upload/image/20160704/1467630121301566.png&id=4&model=ahld_mall&token=tcpbjz1466048616
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\xampp\htdocs\huanledui\trunk\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `tp_ahld_mall` [ RunTime:0.011001s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\xampp\htdocs\huanledui\trunk\Lib\Core\Db.class.php 第 572 行.
+SQL: SELECT `img` FROM `tp_ahld_mall` WHERE ( `id` = 4 ) LIMIT 1   [ RunTime:0.009001s ]
+SQL: UPDATE `tp_ahld_mall` SET `img`='/public_source/www/upload/image/20160702/1467428682138329.jpg,' WHERE ( `id` = 4 ) [ RunTime:0.022001s ]
+
+[ 2016-07-05T09:19:35+08:00 ] 127.0.0.1 /index.php?g=Api&m=Img&a=del_img&img=/public_source/www/upload/image/20160704/1467625552198204.png&id=5&model=ahld_mall&token=tcpbjz1466048616
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\xampp\htdocs\huanledui\trunk\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `tp_ahld_mall` [ RunTime:0.015600s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\xampp\htdocs\huanledui\trunk\Lib\Core\Db.class.php 第 572 行.
+SQL: SELECT `img` FROM `tp_ahld_mall` WHERE ( `id` = 5 ) LIMIT 1   [ RunTime:0.015600s ]
+SQL: UPDATE `tp_ahld_mall` SET `img`='/public_source/www/upload/image/20160702/1467428903198806.jpg,' WHERE ( `id` = 5 ) [ RunTime:0.015600s ]
+
+[ 2016-07-05T09:19:37+08:00 ] 127.0.0.1 /index.php?g=Api&m=Img&a=del_img&img=/public_source/www/upload/image/20160702/1467428903198806.jpg&id=5&model=ahld_mall&token=tcpbjz1466048616
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\xampp\htdocs\huanledui\trunk\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `tp_ahld_mall` [ RunTime:0.009001s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\xampp\htdocs\huanledui\trunk\Lib\Core\Db.class.php 第 572 行.
+SQL: SELECT `img` FROM `tp_ahld_mall` WHERE ( `id` = 5 ) LIMIT 1   [ RunTime:0.019001s ]
+SQL: UPDATE `tp_ahld_mall` SET `img`='' WHERE ( `id` = 5 ) [ RunTime:0.017001s ]
+
+[ 2016-07-05T09:20:18+08:00 ] 127.0.0.1 /index.php?g=Api&m=Img&a=del_img&img=/public_source/www/upload/image/20160705/1467681353950830.jpg&id=1&model=ahld_mall&token=tcpbjz1466048616
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\xampp\htdocs\huanledui\trunk\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `tp_ahld_mall` [ RunTime:0.010001s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\xampp\htdocs\huanledui\trunk\Lib\Core\Db.class.php 第 572 行.
+SQL: SELECT `img` FROM `tp_ahld_mall` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.010001s ]
+SQL: UPDATE `tp_ahld_mall` SET `img`='/public_source/www/upload/image/20160705/1467681353138648.jpg,/public_source/www/upload/image/20160705/1467681353136617.jpg,/public_source/www/upload/image/20160705/1467681354101494.jpg,' WHERE ( `id` = 1 ) [ RunTime:0.011000s ]
+
+[ 2016-07-05T09:20:19+08:00 ] 127.0.0.1 /index.php?g=Api&m=Img&a=del_img&img=/public_source/www/upload/image/20160705/1467681353138648.jpg&id=1&model=ahld_mall&token=tcpbjz1466048616
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\xampp\htdocs\huanledui\trunk\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `tp_ahld_mall` [ RunTime:0.011000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\xampp\htdocs\huanledui\trunk\Lib\Core\Db.class.php 第 572 行.
+SQL: SELECT `img` FROM `tp_ahld_mall` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.010001s ]
+SQL: UPDATE `tp_ahld_mall` SET `img`='/public_source/www/upload/image/20160705/1467681353136617.jpg,/public_source/www/upload/image/20160705/1467681354101494.jpg,' WHERE ( `id` = 1 ) [ RunTime:0.009000s ]
+
+[ 2016-07-05T09:20:21+08:00 ] 127.0.0.1 /index.php?g=Api&m=Img&a=del_img&img=/public_source/www/upload/image/20160705/1467681354101494.jpg&id=1&model=ahld_mall&token=tcpbjz1466048616
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\xampp\htdocs\huanledui\trunk\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `tp_ahld_mall` [ RunTime:0.010001s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\xampp\htdocs\huanledui\trunk\Lib\Core\Db.class.php 第 572 行.
+SQL: SELECT `img` FROM `tp_ahld_mall` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.012001s ]
+SQL: UPDATE `tp_ahld_mall` SET `img`='/public_source/www/upload/image/20160705/1467681353136617.jpg,' WHERE ( `id` = 1 ) [ RunTime:0.007000s ]
+
+[ 2016-07-05T09:20:22+08:00 ] 127.0.0.1 /index.php?g=Api&m=Img&a=del_img&img=/public_source/www/upload/image/20160705/1467681353136617.jpg&id=1&model=ahld_mall&token=tcpbjz1466048616
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\xampp\htdocs\huanledui\trunk\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `tp_ahld_mall` [ RunTime:0.010000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\xampp\htdocs\huanledui\trunk\Lib\Core\Db.class.php 第 572 行.
+SQL: SELECT `img` FROM `tp_ahld_mall` WHERE ( `id` = 1 ) LIMIT 1   [ RunTime:0.007001s ]
+SQL: UPDATE `tp_ahld_mall` SET `img`='' WHERE ( `id` = 1 ) [ RunTime:0.008000s ]
+
+[ 2016-07-05T09:20:48+08:00 ] 127.0.0.1 /index.php?g=Api&m=Img&a=del_img&img=/public_source/www/upload/image/20160702/1467424619131117.jpg&id=3&model=ahld_mall&token=tcpbjz1466048616
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\xampp\htdocs\huanledui\trunk\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `tp_ahld_mall` [ RunTime:0.007000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\xampp\htdocs\huanledui\trunk\Lib\Core\Db.class.php 第 572 行.
+SQL: SELECT `img` FROM `tp_ahld_mall` WHERE ( `id` = 3 ) LIMIT 1   [ RunTime:0.007001s ]
+SQL: UPDATE `tp_ahld_mall` SET `img`='' WHERE ( `id` = 3 ) [ RunTime:0.008000s ]
+
+[ 2016-07-05T09:24:43+08:00 ] 127.0.0.1 /index.php?g=Api&m=Img&a=del_img&img=/public_source/www/upload/image/20160705/1467681786130816.jpg&id=7&model=ahld_mall&token=tcpbjz1466048616
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\xampp\htdocs\huanledui\trunk\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `tp_ahld_mall` [ RunTime:0.015600s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\xampp\htdocs\huanledui\trunk\Lib\Core\Db.class.php 第 572 行.
+SQL: SELECT `img` FROM `tp_ahld_mall` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2016-07-05T09:24:44+08:00 ] 127.0.0.1 /index.php?g=Api&m=Img&a=del_img&img=/public_source/www/upload/image/20160705/1467681786214298.jpg&id=7&model=ahld_mall&token=tcpbjz1466048616
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\xampp\htdocs\huanledui\trunk\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `tp_ahld_mall` [ RunTime:0.015600s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\xampp\htdocs\huanledui\trunk\Lib\Core\Db.class.php 第 572 行.
+SQL: SELECT `img` FROM `tp_ahld_mall` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2016-07-05T09:24:46+08:00 ] 127.0.0.1 /index.php?g=Api&m=Img&a=del_img&img=/public_source/www/upload/image/20160705/1467681786345975.jpg&id=7&model=ahld_mall&token=tcpbjz1466048616
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\xampp\htdocs\huanledui\trunk\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `tp_ahld_mall` [ RunTime:0.000000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\xampp\htdocs\huanledui\trunk\Lib\Core\Db.class.php 第 572 行.
+SQL: SELECT `img` FROM `tp_ahld_mall` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.015600s ]
+
+[ 2016-07-05T09:24:48+08:00 ] 127.0.0.1 /index.php?g=Api&m=Img&a=del_img&img=/public_source/www/upload/image/20160705/1467681786708905.jpg&id=7&model=ahld_mall&token=tcpbjz1466048616
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\xampp\htdocs\huanledui\trunk\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `tp_ahld_mall` [ RunTime:0.015600s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\xampp\htdocs\huanledui\trunk\Lib\Core\Db.class.php 第 572 行.
+SQL: SELECT `img` FROM `tp_ahld_mall` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.015600s ]
+
+[ 2016-07-05T09:24:49+08:00 ] 127.0.0.1 /index.php?g=Api&m=Img&a=del_img&img=/public_source/www/upload/image/20160705/1467681786824488.jpg&id=7&model=ahld_mall&token=tcpbjz1466048616
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\xampp\htdocs\huanledui\trunk\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `tp_ahld_mall` [ RunTime:0.015600s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\xampp\htdocs\huanledui\trunk\Lib\Core\Db.class.php 第 572 行.
+SQL: SELECT `img` FROM `tp_ahld_mall` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2016-07-05T09:24:50+08:00 ] 127.0.0.1 /index.php?g=Api&m=Img&a=del_img&img=/public_source/www/upload/image/20160705/1467681786279018.jpg&id=7&model=ahld_mall&token=tcpbjz1466048616
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\xampp\htdocs\huanledui\trunk\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `tp_ahld_mall` [ RunTime:0.000000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\xampp\htdocs\huanledui\trunk\Lib\Core\Db.class.php 第 572 行.
+SQL: SELECT `img` FROM `tp_ahld_mall` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.015600s ]
+
+[ 2016-07-05T09:24:51+08:00 ] 127.0.0.1 /index.php?g=Api&m=Img&a=del_img&img=/public_source/www/upload/image/20160705/1467681753129327.jpg&id=7&model=ahld_mall&token=tcpbjz1466048616
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\xampp\htdocs\huanledui\trunk\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `tp_ahld_mall` [ RunTime:0.015600s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\xampp\htdocs\huanledui\trunk\Lib\Core\Db.class.php 第 572 行.
+SQL: SELECT `img` FROM `tp_ahld_mall` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.015600s ]
+
+[ 2016-07-05T09:24:52+08:00 ] 127.0.0.1 /index.php?g=Api&m=Img&a=del_img&img=/public_source/www/upload/image/20160705/1467681753322824.jpg&id=7&model=ahld_mall&token=tcpbjz1466048616
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\xampp\htdocs\huanledui\trunk\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `tp_ahld_mall` [ RunTime:0.000000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\xampp\htdocs\huanledui\trunk\Lib\Core\Db.class.php 第 572 行.
+SQL: SELECT `img` FROM `tp_ahld_mall` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.015600s ]
+
+[ 2016-07-05T09:24:53+08:00 ] 127.0.0.1 /index.php?g=Api&m=Img&a=del_img&img=/public_source/www/upload/image/20160705/1467681753668154.jpg&id=7&model=ahld_mall&token=tcpbjz1466048616
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\xampp\htdocs\huanledui\trunk\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `tp_ahld_mall` [ RunTime:0.011001s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\xampp\htdocs\huanledui\trunk\Lib\Core\Db.class.php 第 572 行.
+SQL: SELECT `img` FROM `tp_ahld_mall` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.008000s ]
+
+[ 2016-07-05T09:27:44+08:00 ] 127.0.0.1 /index.php?g=Api&m=Img&a=del_img&img=/public_source/www/upload/image/20160705/1467681944567675.jpg&id=7&model=ahld_mall&token=tcpbjz1466048616
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\xampp\htdocs\huanledui\trunk\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `tp_ahld_mall` [ RunTime:0.009001s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\xampp\htdocs\huanledui\trunk\Lib\Core\Db.class.php 第 572 行.
+SQL: SELECT `img` FROM `tp_ahld_mall` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.011000s ]
+
+[ 2016-07-05T09:27:45+08:00 ] 127.0.0.1 /index.php?g=Api&m=Img&a=del_img&img=/public_source/www/upload/image/20160705/1467681944223765.jpg&id=7&model=ahld_mall&token=tcpbjz1466048616
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\xampp\htdocs\huanledui\trunk\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `tp_ahld_mall` [ RunTime:0.009000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\xampp\htdocs\huanledui\trunk\Lib\Core\Db.class.php 第 572 行.
+SQL: SELECT `img` FROM `tp_ahld_mall` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.009001s ]
+
+[ 2016-07-05T09:27:46+08:00 ] 127.0.0.1 /index.php?g=Api&m=Img&a=del_img&img=/public_source/www/upload/image/20160705/1467681944102157.jpg&id=7&model=ahld_mall&token=tcpbjz1466048616
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\xampp\htdocs\huanledui\trunk\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `tp_ahld_mall` [ RunTime:0.010001s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\xampp\htdocs\huanledui\trunk\Lib\Core\Db.class.php 第 572 行.
+SQL: SELECT `img` FROM `tp_ahld_mall` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.011000s ]
+
+[ 2016-07-05T09:27:47+08:00 ] 127.0.0.1 /index.php?g=Api&m=Img&a=del_img&img=/public_source/www/upload/image/20160705/1467681945111250.jpg&id=7&model=ahld_mall&token=tcpbjz1466048616
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\xampp\htdocs\huanledui\trunk\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `tp_ahld_mall` [ RunTime:0.012001s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\xampp\htdocs\huanledui\trunk\Lib\Core\Db.class.php 第 572 行.
+SQL: SELECT `img` FROM `tp_ahld_mall` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.012000s ]
+
+[ 2016-07-05T09:27:48+08:00 ] 127.0.0.1 /index.php?g=Api&m=Img&a=del_img&img=/public_source/www/upload/image/20160705/1467681945788858.jpg&id=7&model=ahld_mall&token=tcpbjz1466048616
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\xampp\htdocs\huanledui\trunk\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `tp_ahld_mall` [ RunTime:0.011000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\xampp\htdocs\huanledui\trunk\Lib\Core\Db.class.php 第 572 行.
+SQL: SELECT `img` FROM `tp_ahld_mall` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.007001s ]
+
+[ 2016-07-05T09:27:49+08:00 ] 127.0.0.1 /index.php?g=Api&m=Img&a=del_img&img=/public_source/www/upload/image/20160705/1467681959816054.jpg&id=7&model=ahld_mall&token=tcpbjz1466048616
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\xampp\htdocs\huanledui\trunk\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `tp_ahld_mall` [ RunTime:0.008001s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\xampp\htdocs\huanledui\trunk\Lib\Core\Db.class.php 第 572 行.
+SQL: SELECT `img` FROM `tp_ahld_mall` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.007000s ]
+
+[ 2016-07-05T09:27:50+08:00 ] 127.0.0.1 /index.php?g=Api&m=Img&a=del_img&img=/public_source/www/upload/image/20160705/1467681959897642.jpg&id=7&model=ahld_mall&token=tcpbjz1466048616
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\xampp\htdocs\huanledui\trunk\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `tp_ahld_mall` [ RunTime:0.010000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\xampp\htdocs\huanledui\trunk\Lib\Core\Db.class.php 第 572 行.
+SQL: SELECT `img` FROM `tp_ahld_mall` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.007001s ]
+
+[ 2016-07-05T09:27:51+08:00 ] 127.0.0.1 /index.php?g=Api&m=Img&a=del_img&img=/public_source/www/upload/image/20160705/1467681959853492.jpg&id=7&model=ahld_mall&token=tcpbjz1466048616
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\xampp\htdocs\huanledui\trunk\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `tp_ahld_mall` [ RunTime:0.008001s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\xampp\htdocs\huanledui\trunk\Lib\Core\Db.class.php 第 572 行.
+SQL: SELECT `img` FROM `tp_ahld_mall` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.006000s ]
+
+[ 2016-07-05T09:27:52+08:00 ] 127.0.0.1 /index.php?g=Api&m=Img&a=del_img&img=/public_source/www/upload/image/20160705/1467681959127236.jpg&id=7&model=ahld_mall&token=tcpbjz1466048616
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\xampp\htdocs\huanledui\trunk\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `tp_ahld_mall` [ RunTime:0.012000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\xampp\htdocs\huanledui\trunk\Lib\Core\Db.class.php 第 572 行.
+SQL: SELECT `img` FROM `tp_ahld_mall` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.007001s ]
+
+[ 2016-07-05T09:27:53+08:00 ] 127.0.0.1 /index.php?g=Api&m=Img&a=del_img&img=/public_source/www/upload/image/20160705/1467681959129981.jpg&id=7&model=ahld_mall&token=tcpbjz1466048616
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\xampp\htdocs\huanledui\trunk\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `tp_ahld_mall` [ RunTime:0.009000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\xampp\htdocs\huanledui\trunk\Lib\Core\Db.class.php 第 572 行.
+SQL: SELECT `img` FROM `tp_ahld_mall` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.007001s ]
+
+[ 2016-07-05T09:27:53+08:00 ] 127.0.0.1 /index.php?g=Api&m=Img&a=del_img&img=/public_source/www/upload/image/20160705/1467681959765965.jpg&id=7&model=ahld_mall&token=tcpbjz1466048616
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\xampp\htdocs\huanledui\trunk\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `tp_ahld_mall` [ RunTime:0.007000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\xampp\htdocs\huanledui\trunk\Lib\Core\Db.class.php 第 572 行.
+SQL: SELECT `img` FROM `tp_ahld_mall` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.006000s ]
+
+[ 2016-07-05T09:28:26+08:00 ] 127.0.0.1 /index.php?g=Api&m=Img&a=imgs_del&token=tcpbjz1466048616
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-05T09:28:47+08:00 ] 127.0.0.1 /index.php?g=Api&m=Img&a=del_img&img=/public_source/www/upload/image/20160705/1467682091690789.jpg&id=7&model=ahld_mall&token=tcpbjz1466048616
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\xampp\htdocs\huanledui\trunk\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `tp_ahld_mall` [ RunTime:0.000000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\xampp\htdocs\huanledui\trunk\Lib\Core\Db.class.php 第 572 行.
+SQL: SELECT `img` FROM `tp_ahld_mall` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.015600s ]
+
+[ 2016-07-05T09:28:48+08:00 ] 127.0.0.1 /index.php?g=Api&m=Img&a=del_img&img=/public_source/www/upload/image/20160705/1467682091120062.jpg&id=7&model=ahld_mall&token=tcpbjz1466048616
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\xampp\htdocs\huanledui\trunk\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `tp_ahld_mall` [ RunTime:0.015600s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\xampp\htdocs\huanledui\trunk\Lib\Core\Db.class.php 第 572 行.
+SQL: SELECT `img` FROM `tp_ahld_mall` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2016-07-05T09:28:49+08:00 ] 127.0.0.1 /index.php?g=Api&m=Img&a=del_img&img=/public_source/www/upload/image/20160705/1467682091101318.jpg&id=7&model=ahld_mall&token=tcpbjz1466048616
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\xampp\htdocs\huanledui\trunk\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `tp_ahld_mall` [ RunTime:0.015600s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\xampp\htdocs\huanledui\trunk\Lib\Core\Db.class.php 第 572 行.
+SQL: SELECT `img` FROM `tp_ahld_mall` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2016-07-05T09:28:50+08:00 ] 127.0.0.1 /index.php?g=Api&m=Img&a=del_img&img=/public_source/www/upload/image/20160705/1467682091789547.jpg&id=7&model=ahld_mall&token=tcpbjz1466048616
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\xampp\htdocs\huanledui\trunk\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `tp_ahld_mall` [ RunTime:0.008001s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\xampp\htdocs\huanledui\trunk\Lib\Core\Db.class.php 第 572 行.
+SQL: SELECT `img` FROM `tp_ahld_mall` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.001000s ]
+
+[ 2016-07-05T09:28:51+08:00 ] 127.0.0.1 /index.php?g=Api&m=Img&a=del_img&img=/public_source/www/upload/image/20160705/1467682091282245.jpg&id=7&model=ahld_mall&token=tcpbjz1466048616
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\xampp\htdocs\huanledui\trunk\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `tp_ahld_mall` [ RunTime:0.000000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\xampp\htdocs\huanledui\trunk\Lib\Core\Db.class.php 第 572 行.
+SQL: SELECT `img` FROM `tp_ahld_mall` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.015600s ]
+
+[ 2016-07-05T09:28:52+08:00 ] 127.0.0.1 /index.php?g=Api&m=Img&a=del_img&img=/public_source/www/upload/image/20160705/1467682091136888.jpg&id=7&model=ahld_mall&token=tcpbjz1466048616
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\xampp\htdocs\huanledui\trunk\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `tp_ahld_mall` [ RunTime:0.000000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\xampp\htdocs\huanledui\trunk\Lib\Core\Db.class.php 第 572 行.
+SQL: SELECT `img` FROM `tp_ahld_mall` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.015600s ]
+
+[ 2016-07-05T09:29:43+08:00 ] 127.0.0.1 /index.php?g=Api&m=Img&a=imgs_del&token=tcpbjz1466048616
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-07-05T10:17:52+08:00 ] 127.0.0.1 /index.php?g=Api&m=Img&a=del_img&img=/public_source/www/upload/image/20160705/1467685049446798.jpg&id=7&model=ahld_mall&token=tcpbjz1466048616
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\xampp\htdocs\huanledui\trunk\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `tp_ahld_mall` [ RunTime:0.007000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\xampp\htdocs\huanledui\trunk\Lib\Core\Db.class.php 第 572 行.
+SQL: SELECT `img` FROM `tp_ahld_mall` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2016-07-05T10:17:53+08:00 ] 127.0.0.1 /index.php?g=Api&m=Img&a=del_img&img=/public_source/www/upload/image/20160705/1467685049607479.jpg&id=7&model=ahld_mall&token=tcpbjz1466048616
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\xampp\htdocs\huanledui\trunk\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `tp_ahld_mall` [ RunTime:0.014000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\xampp\htdocs\huanledui\trunk\Lib\Core\Db.class.php 第 572 行.
+SQL: SELECT `img` FROM `tp_ahld_mall` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.009001s ]
+
+[ 2016-07-05T10:17:55+08:00 ] 127.0.0.1 /index.php?g=Api&m=Img&a=del_img&img=/public_source/www/upload/image/20160705/1467685049828878.jpg&id=7&model=ahld_mall&token=tcpbjz1466048616
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\xampp\htdocs\huanledui\trunk\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `tp_ahld_mall` [ RunTime:0.000000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\xampp\htdocs\huanledui\trunk\Lib\Core\Db.class.php 第 572 行.
+SQL: SELECT `img` FROM `tp_ahld_mall` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.015600s ]
+
+[ 2016-07-05T10:17:56+08:00 ] 127.0.0.1 /index.php?g=Api&m=Img&a=del_img&img=/public_source/www/upload/image/20160705/1467685049693155.jpg&id=7&model=ahld_mall&token=tcpbjz1466048616
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\xampp\htdocs\huanledui\trunk\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `tp_ahld_mall` [ RunTime:0.015600s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\xampp\htdocs\huanledui\trunk\Lib\Core\Db.class.php 第 572 行.
+SQL: SELECT `img` FROM `tp_ahld_mall` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.000000s ]
+
+[ 2016-07-05T10:30:56+08:00 ] 127.0.0.1 /index.php?g=Api&m=Img&a=del_img&img=/public_source/www/upload/image/20160705/1467683269475501.jpg&id=7&model=ahld_mall&token=tcpbjz1466048616
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\xampp\htdocs\huanledui\trunk\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `tp_ahld_mall` [ RunTime:0.000000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\xampp\htdocs\huanledui\trunk\Lib\Core\Db.class.php 第 572 行.
+SQL: SELECT `img` FROM `tp_ahld_mall` WHERE ( `id` = 7 ) LIMIT 1   [ RunTime:0.015600s ]
+
+[ 2016-07-05T11:24:46+08:00 ] 127.0.0.1 /index.php?g=Api&m=Img&a=imgs_del&token=tcpbjz1466048616
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-07-05T11:25:18+08:00 ] 127.0.0.1 /index.php?g=Api&m=Img&a=del_img&img=/public_source/www/upload/image/20160705/1467689105103981.jpg&id=&model=ahld_mall&token=tcpbjz1466048616
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\xampp\htdocs\huanledui\trunk\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `tp_ahld_mall` [ RunTime:0.010000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\xampp\htdocs\huanledui\trunk\Lib\Core\Db.class.php 第 572 行.
+SQL: SELECT `img` FROM `tp_ahld_mall` WHERE ( `id` = 0 ) LIMIT 1   [ RunTime:0.007001s ]
+
+[ 2016-07-05T11:25:25+08:00 ] 127.0.0.1 /index.php?g=Api&m=Img&a=del_img&img=/public_source/www/upload/image/20160705/1467689105880860.jpg&id=&model=ahld_mall&token=tcpbjz1466048616
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\xampp\htdocs\huanledui\trunk\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `tp_ahld_mall` [ RunTime:0.010000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\xampp\htdocs\huanledui\trunk\Lib\Core\Db.class.php 第 572 行.
+SQL: SELECT `img` FROM `tp_ahld_mall` WHERE ( `id` = 0 ) LIMIT 1   [ RunTime:0.007001s ]
+
+[ 2016-07-05T14:44:44+08:00 ] 127.0.0.1 /index.php?g=Api&m=Merchant&a=del_merchant
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\xampp\htdocs\huanledui\trunk\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `tp_ahld_mtype` [ RunTime:0.009001s ]
+SQL: SHOW COLUMNS FROM `tp_ahld_mall` [ RunTime:0.009000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\xampp\htdocs\huanledui\trunk\Lib\Core\Db.class.php 第 572 行.
+SQL: SELECT `img` FROM `tp_ahld_mall` WHERE id in(8,7)  [ RunTime:0.008001s ]
+SQL: DELETE FROM `tp_ahld_mall` WHERE id in(8,7) [ RunTime:0.009000s ]
+
+[ 2016-07-05T14:46:45+08:00 ] 127.0.0.1 /index.php?g=Api&m=Merchant&a=del_merchant
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\xampp\htdocs\huanledui\trunk\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `tp_ahld_mtype` [ RunTime:0.010000s ]
+SQL: SHOW COLUMNS FROM `tp_ahld_mall` [ RunTime:0.009001s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\xampp\htdocs\huanledui\trunk\Lib\Core\Db.class.php 第 572 行.
+SQL: SELECT `img` FROM `tp_ahld_mall` WHERE id in(6)  [ RunTime:0.008000s ]
+SQL: DELETE FROM `tp_ahld_mall` WHERE id in(6) [ RunTime:0.008001s ]
+
+[ 2016-07-05T14:50:50+08:00 ] 127.0.0.1 /index.php?g=Api&m=Merchant&a=del_merchant
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\xampp\htdocs\huanledui\trunk\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `tp_ahld_mtype` [ RunTime:0.010001s ]
+SQL: SHOW COLUMNS FROM `tp_ahld_mall` [ RunTime:0.011000s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\xampp\htdocs\huanledui\trunk\Lib\Core\Db.class.php 第 572 行.
+SQL: SELECT `img` FROM `tp_ahld_mall` WHERE id=5  [ RunTime:0.011001s ]
+SQL: DELETE FROM `tp_ahld_mall` WHERE id=5 [ RunTime:0.009000s ]
+
+[ 2016-07-05T14:56:56+08:00 ] 127.0.0.1 /index.php?g=Api&m=Merchant&a=del_mtype
+INFO: [ app_begin ] --START--
+INFO: Run ReadHtmlCache Behavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\xampp\htdocs\huanledui\trunk\Lib\Driver\Db\DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `tp_ahld_mtype` [ RunTime:0.015000s ]
+SQL: DELETE FROM `tp_ahld_mtype` WHERE id in(18) [ RunTime:0.017001s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead E:\xampp\htdocs\huanledui\trunk\Lib\Core\Db.class.php 第 572 行.
+SQL: SELECT `id`,`pid`,`name` FROM `tp_ahld_mtype`  [ RunTime:0.008000s ]
+
